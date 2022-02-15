@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myguitarclass">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        
+        android:theme="@style/Theme.AppCompat.NoActionBar">
+
+
+        <activity android:name=".MainActivity"
+
+                android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".GuitarTuning"
+
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Practice"
+
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".LessonActivity"
+
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".LessonList"
+
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".LessonZero"
+
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".LessonOne"
+
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".LessonTwo"
+
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".LessonThree"
+
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".LessonFour"
+
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".LessonFive"
+
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".LessonSix"
+
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".LessonSeven"
+
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".LessonEight"
+
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".LessonNine"
+
+            android:screenOrientation="portrait"
+            />
+
+
+    </application>
+
+</manifest>

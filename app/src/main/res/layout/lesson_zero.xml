@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color">
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background_color"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/back"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:text="Назад"
+                app:backgroundTint="@color/purple_700"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.049"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.023" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/background_color"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Стандартный строй гитары состоит из следующих нот:\n
+Первая струна – e;\n
+Вторая струна – B;\n
+Третья струна – G;\n
+Четвертая струна – D;\n
+Пятая струна – A;\n
+Шестая струна – E;"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Самый лучший и полезный способ настройки — это настройка гитары на слух."
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Чтобы настроить первую струну нажмите на кнопку «е». Вы услышите, как должна звучать первая струна. Ваша задача – подтянуть вашу струну до того тона, который вы слышите после нажатия на кнопку.  Точно так же настраиваются и другие струны."
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/stringD"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_marginEnd="100dp"
+                android:layout_marginRight="100dp"
+                android:background="@drawable/custom_button"
+                android:text="D"
+                android:textAllCaps="false"
+                android:textSize="30sp"
+                app:backgroundTint="@color/black"
+                app:layout_constraintBottom_toBottomOf="@+id/button34"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.084"
+                app:layout_constraintStart_toStartOf="@+id/imageView3"
+                app:layout_constraintTop_toTopOf="@+id/imageView3"
+                app:layout_constraintVertical_bias="0.29" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/stringG"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_marginStart="100dp"
+                android:layout_marginLeft="100dp"
+                android:background="@drawable/custom_button"
+                android:text="G"
+                android:textAllCaps="false"
+                android:textSize="30sp"
+                app:backgroundTint="@color/black"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+                app:layout_constraintEnd_toEndOf="@+id/imageView3"
+                app:layout_constraintHorizontal_bias="0.908"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/imageView3"
+                app:layout_constraintVertical_bias="0.269" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/stringA"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_marginStart="100dp"
+                android:layout_marginLeft="100dp"
+                android:background="@drawable/custom_button"
+                android:text="A"
+                android:textAllCaps="false"
+                android:textSize="30sp"
+                app:backgroundTint="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/stringG"
+                tools:ignore="MissingConstraints" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/stringB"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_marginEnd="100dp"
+                android:layout_marginRight="100dp"
+                android:background="@drawable/custom_button"
+                android:text="B"
+                android:textAllCaps="false"
+                android:textSize="30sp"
+                app:backgroundTint="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/stringD"
+                tools:ignore="MissingConstraints" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/stringE"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_marginStart="100dp"
+                android:layout_marginLeft="100dp"
+                android:background="@drawable/custom_button"
+                android:text="E"
+                android:textAllCaps="false"
+                android:textSize="30sp"
+                app:backgroundTint="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/stringA" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/stringe"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_marginEnd="100dp"
+                android:layout_marginRight="100dp"
+                android:background="@drawable/custom_button"
+                android:text="e"
+                android:textAllCaps="false"
+                android:textSize="30sp"
+                app:backgroundTint="@color/Colki_Color"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/stringB" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Будьте осторожны и крутите колки медленно. Быстрое изменение тона струны может привести к ее разрыву."
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Вторая струна – кнопка «B», третья – «G» и так далее."
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Проверить правильно ли вы настроили гитару можно следующим способом. Зажмите вторую струну на пятом ладу. Она должна звучать в унисон (то есть одинаково) с первой открытой струной."
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Третью струну зажмите на четвертом ладу. Она должна звучать в унисон со второй струной.\n
+Четвертую на пятом ладу, которая будет звучать так же как и открытая третья струна.\n
+Пятую тоже на пятом ладу. Она будет созвучна с уже с четвертой открытой струной.\n
+И шестую на пятом ладу – звучание будет как на пятой открытой струне."
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+
+</ScrollView>

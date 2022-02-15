@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color">
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background_color"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/back"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:text="Назад"
+                app:backgroundTint="@color/purple_700"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.049"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.023" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/background_color"
+            android:orientation="vertical">
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Наше первое занятие будет основано на том, что мы выучим первый ритмический рисунок. Играется он вот так:"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonBoiOneWithChords"
+                android:layout_width="120dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="16dp"
+                android:background="@color/purple_700"
+                android:text="Бой №1"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.203"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <ImageView
+                android:id="@+id/boiWithVocal"
+                android:layout_width="120dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="224dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="92dp"
+                android:layout_marginRight="92dp"
+                android:scaleType="fitXY"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:src="@drawable/first_boi" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Где крестик – это щелчок"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="И когда вы доведем правую руку до автоматизма, мы подключим левую руку и научимся зажимать первые аккорды.\n
+И уже в конце этого занятия вы сможете сыграть свою первую песню и поймете сам принцип игры на гитаре.\n
+И так, приступим к нашему бою(ритмическому рисунку) №1. Играется он так: вниз-вверх-шелчок-вверх.\n
+Вниз и вверх играется большим пальцем, щелчок - всей рукой."
+            android:textSize="20sp" />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Для начала, чтобы привыкнуть как правильно бить по струнам, нужно просто поиграть вниз-вверх-вниз-вверх много раз."
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Щелчок делается следующим образом: подгибаем пальцы левой руки и ими бьем по струнам. После того как пальцы пролетают мимо струн, часть руки глушит их."
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Играем все это вместе. Вниз-вверх-щелчок-вверх. В итоге должно получиться как на нкопке 'Бой №1'.\n
+Отрабатывайте все в медленном ритме. На то чтобы вы научились играть это правильно может потребоваться несколько дней.\n
+После того как вы довели правую руку до автоматизма, мы можем добавить первые аккорды.\n
+Аккорд Am(Ля минор) ставится и звучит он вот так."
+            android:textSize="20sp" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/amFingering"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginLeft="224dp"
+                android:layout_marginEnd="208dp"
+                android:layout_marginRight="208dp"
+                android:scaleType="fitXY"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:src="@drawable/am_fingering" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonAm"
+                android:layout_width="120dp"
+                android:layout_height="70dp"
+                android:background="@color/purple_700"
+                android:text="Am"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/amFingering"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                tools:ignore="MissingConstraints" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Зажимается вторая струна на первом ладу указательным пальцем, четверную струну на втором ладу средним пальцем и третью струну на втором ладу безымянным пальцем.\n
+Звучать он должен вот так (аудио).\n
+Зажимаем аккорд Am и играем наш бой четыре раза и ставим следующий аккорд – С (До мажор)."
+            android:textSize="20sp" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/cFingering"
+                android:layout_width="150dp"
+                android:layout_height="170dp"
+                android:layout_marginLeft="224dp"
+                android:layout_marginEnd="208dp"
+                android:layout_marginRight="208dp"
+                android:scaleType="fitXY"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:src="@drawable/c_fingering" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonC"
+                android:layout_width="120dp"
+                android:layout_height="70dp"
+                android:background="@color/purple_700"
+                android:text="C"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/cFingering"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                tools:ignore="MissingConstraints" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Указательный и средний палец остаются на месте, а безымянный переносим на пятую струну третьего лада. Играем так же четыре боя.\n
+Наш следующий аккорд – Dm (Ре минор). Первая струна первый лад, третья струна второй лад и вторая струна третий лад. Играем так же четыре раза."
+            android:textSize="20sp" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/dmFingering"
+                android:layout_width="150dp"
+                android:layout_height="170dp"
+                android:layout_marginLeft="224dp"
+                android:layout_marginEnd="208dp"
+                android:layout_marginRight="208dp"
+                android:scaleType="fitXY"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:src="@drawable/dm_fingering" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonDm"
+                android:layout_width="120dp"
+                android:layout_height="70dp"
+                android:background="@color/purple_700"
+                android:text="Dm"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/dmFingering"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                tools:ignore="MissingConstraints" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="И последний аккорд - G (Соль мажор). Пятая струна второй лад, шестая струна третий лад и первая струна тоже третий лад. Так же играем наш бой четыре раза.\n
+Когда вы выучите эти аккорды, старайтесь играть их без паузы, без остановки правой руки при переходе с аккорда на аккорд."
+            android:textSize="20sp" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/gFingering"
+                android:layout_width="150dp"
+                android:layout_height="170dp"
+                android:layout_marginLeft="224dp"
+                android:layout_marginEnd="208dp"
+                android:layout_marginRight="208dp"
+                android:scaleType="fitXY"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:src="@drawable/g_fingering" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonG"
+                android:layout_width="120dp"
+                android:layout_height="70dp"
+                android:background="@color/purple_700"
+                android:text="G"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/gFingering"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                tools:ignore="MissingConstraints" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="В результате, уже после первого занятия вы сможете сыграть свою первую песню. Она называется «Звезда по имени солнце»
+В этой песне аккорды идут в такой последовательности:\n
+Am C Dm G\n
+Am C Dm G\n
+Dm Am.\n
+В следующем уроке мы сделаем упор на аккорды. Мы будем учиться быстро переставлять аккорды, играя их одним боем."
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+
+</ScrollView>

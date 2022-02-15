@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color">
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background_color"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/back"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:text="Назад"
+                app:backgroundTint="@color/purple_700"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.049"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.023" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/background_color"
+            android:orientation="vertical">
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="После этого урока вы сможете сыграть большое количество песен на простом уровне.\n
+Итак, новый ритмический рисунок звучит и играется следующим образом:"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonBoiTwo"
+                android:layout_width="120dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginLeft="25dp"
+                android:background="@color/purple_700"
+                android:text="Бой №2"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.203"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <ImageView
+                android:id="@+id/boiTwo"
+                android:layout_width="120dp"
+                android:layout_height="70dp"
+                android:layout_marginEnd="92dp"
+                android:layout_marginRight="92dp"
+                android:scaleType="fitXY"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/buttonBoiTwo"
+                app:layout_constraintTop_toTopOf="parent"
+                android:src="@drawable/boi_two" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Вниз-щелчок-вверх-вверх-щелчок-вверх. Назовем его Бой№2.\n
+Когда вы научитесь играть этот бой в нормальном темпе мы начнем учить песню группы Кино «Нам с тобой»."
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Эта песня играется по такой схеме: Вступление играется боем №1 по одному разу на каждый аккорд.\n
+Em D Em D\n
+C D Em D\n
+Дальше идет куплет, он играется так же:\n
+Em D Em D\n
+C D Em D\n
+Но в конце куплета мы переходим на бой №2 и играем аккорды:  H7 C."
+            android:textSize="20sp" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonHSeven"
+                android:layout_width="120dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginLeft="25dp"
+                android:background="@color/purple_700"
+                android:text="H7"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.203"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <ImageView
+                android:id="@+id/chordHSeven"
+                android:layout_width="120dp"
+                android:layout_height="70dp"
+                android:layout_marginEnd="92dp"
+                android:layout_marginRight="92dp"
+                android:scaleType="fitXY"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/buttonBoi3Na4"
+                app:layout_constraintTop_toTopOf="parent"
+                android:src="@drawable/h_seven_fingering" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Аккорд H7 ставится вот таким образом: четвертая струна зажата на первом ладу, а пятая, третья и первая струна зажаты на втором ладу.\n
+Дальше мы переходим на припев, который полностью играется боем №2(вниз-щелчок-вверх-вверх-щелчок-вверх) на аккордах:"
+            android:textSize="20sp" />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EmE m Am D.\n
+То есть дважды играем аккорд Em и по одному разу аккорды Am и D.\n
+Наверняка с аккордом D у вас еще есть какие-то проблемы. Но после этого урока, эта проблема уйдет."
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+
+</ScrollView>
