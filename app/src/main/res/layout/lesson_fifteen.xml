@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color">
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background_color"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/back"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:text="Назад"
+                app:backgroundTint="@color/purple_700"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.049"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.023" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/background_color"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="И так, вы поиграли ритм Регги из предыдущего урока несколько дней."
+                android:textSize="20sp" />
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Теперь беремся за следующую часть. Казалось бы, тоже самое, но теперь вместо глухого удара мы топаем ногой. Это нужно для того, чтобы ногой вы контролировали счет, а вы при этом чувствовали эту слабую долю, не играя ее.\n
+При всей своей легкости руки могут путаться, хотя здесь всего два удара."
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="И третья часть задания – и топать ногой, и играть глухой удар.\n
+Попробуйте сыграть это, и вы удивитесь, насколько ваши руки и ноги привыкли работать вместе. Этот урок поможет вам раскоординировать ваши руки и ноги для дальнейшего обучения игры на гитаре в НЕ дворовом стиле."
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="В следующем уроке мы продолжим эту тему, только правая рука будет играть более кратные числа. Из звучных и не звучных ударов мы начнем делать целые рисунки."
+            android:textSize="20sp" />
+
+
+    </LinearLayout>
+
+
+</ScrollView>

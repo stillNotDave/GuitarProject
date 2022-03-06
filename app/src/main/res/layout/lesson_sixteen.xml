@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color">
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background_color"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/back"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:text="Назад"
+                app:backgroundTint="@color/purple_700"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.049"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.023" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/background_color"
+            android:orientation="vertical">
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Этот урок является продолжением предыдущих двух уроков. На прошлом уроке мы учились играть ритм Регги, состоящий из двух ударов вниз.\n
+Сегодня правая рука будет работать немного быстрее. И так. Берем за основу движение, которое мы играли в бое-галоп. Только там мы играли по 3 удара, а сегодня мы будем играть просто вниз-вверх. Два глухих удара, два звучных.\n
+Будет звучать это вот так:"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonRitmGaggy"
+                android:layout_width="180dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@color/purple_700"
+                android:text="Ритм Регии"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="А теперь попробуйте совместить изученное. Сыграйте аккорд А двумя ударами(глухой-звучный), а аккорд FM# четырьмя ударами(глухой-глухой-звучный-звучный)."
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Теперь, усложним задачу еще сильнее. На аккорде А добавим один звучный удар вверх, то есть ритмический рисунок будет выглядеть вот так: вниз глухой-вниз звучный-вверх звучный. Мы как бы совместили два пройденных ритмических рисунка.\n
+На самом деле это не сложно, нужно просто немного попрактиковаться."
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Допустим, вы какое-то время попрактиковались и уже без проблем можете любым из изученных ритмов-регги сыграть любые комбинации аккордов.\n
+Теперь давайте на аккорде FM# добавим вот такую взбивку. Звучит она так:"
+            android:textSize="20sp" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonVzbivka"
+                android:layout_width="180dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@color/purple_700"
+                android:text="Взбивка"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Как видите, мы постоянно меняем местами заглушенные и звучные ноты.\n
+Пробуйте играть аккорд А любым из изученных боев, а аккорд FM# взбивкой."
+            android:textSize="20sp" />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="По сути, все что мы научились играть – это один и тот же бой, который просто имеет разные акценты. А по факту, весь бой укладывается в один ритмический рисунок."
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+
+</ScrollView>

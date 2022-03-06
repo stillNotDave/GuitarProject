@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color">
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background_color"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/back"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:text="Назад"
+                app:backgroundTint="@color/purple_700"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.049"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.023" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/background_color"
+            android:orientation="vertical">
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Я надеюсь, вы довели предыдущий урок до автоматизма. Потому что этот автоматизм в правой руке нам сегодня пригодится."
+                android:textSize="20sp" />
+        </LinearLayout>
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Сегодня мы изучим ритм Регги, это ритм, который играется на слабую долю. Особенность этого ритма в том, что во всех ритмах которые мы изучали до этого урока акцент был на счет, то есть РАЗ и ДВА и ТРИ и ЧЕТЫРЕ.\n
+Особенность ритма Регги в том, что в нем акцент идет не на цифры РАЗ, ДВА, ТРИ, ЧЕТЫРЕ, а на буквы «и». И раз И два И три.\n
+На цифрах, как правило, тишина, а на «и» идут удары"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="И так, давайте рассмотрим, как играется этот бой.\n
+Давайте возьмем аккорд А (ля мажор) на баррэ и ударим правой рукой в таком же состоянии как и в бое-галоп. Это важно.\n
+Поставьте аккорд А, но не зажмите его и ударьте по струнам. Должен получиться притупленный удар без звука. Теперь зажмите аккорд, и как только вы по нему ударите, расслабьте левую руку чтобы аккорд перестал звучать. И так нужно сделать 4 раза."
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Далее переезжаем на второй лад на аккорд FM#. Выглядит он так:"
+            android:textSize="20sp" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/fingering_fm_diez"
+                android:layout_width="260dp"
+                android:layout_height="180dp"
+                android:layout_marginTop="4dp"
+                android:scaleType="fitXY"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:src="@drawable/fingering_fm_diez" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="И играем так же 4 раза. После чего снова ставим аккорд А и играем все заново пока не получится.\n
+Нажмите на кнопку, чтобы услышать, в какой скорости вы должны это сыграть."
+            android:textSize="20sp" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonLessonFourteen"
+                android:layout_width="180dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@color/purple_700"
+                android:text="Аккорд A и FM#"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Потратьте на это занятие 3–4 дня. Чтобы вы вовремя били по струнам и вовремя обрывали звук."
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+
+</ScrollView>

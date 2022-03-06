@@ -31,7 +31,7 @@ public  static Sound[][] chord_sound = {{new Sound(R.raw.chord_d,"D"),new Sound(
     public  static Sound[][] tuning_sound = {{new Sound(R.raw.tuning_e_major,"E major"),new Sound(R.raw.string1_0,"e"),new Sound(R.raw.string1_0,"B"),
             new Sound(R.raw.string3_0,"G"),new Sound(R.raw.string4_0,"D"),new Sound(R.raw.string5_0,"A"),
             new Sound(R.raw.string6_0,"E")},
-            {new Sound(R.raw.tuning_drop_d,"Drop D"),new Sound(R.raw.string1_0,"e"),new Sound(R.raw.string1_0,"B"),
+            {new Sound(R.raw.tuning_drop_d,"Drop D"),new Sound(R.raw.string1_0,"e"),new Sound(R.raw.string2_0,"B"),
             new Sound(R.raw.string3_0,"G"),new Sound(R.raw.string4_0,"D"),new Sound(R.raw.string5_0,"A"),
             new Sound(R.raw.d_6str_for_dadgad_drop_d,"D")},
             {new Sound(R.raw.tuning_drop_c,"Drop C"),new Sound(R.raw.d_1str_for_dadgad_drop_c,"D"),new Sound(R.raw.a_2str_for_dadgad_drop_c,"A"),

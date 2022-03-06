@@ -186,7 +186,7 @@ public class GuitarTuning extends AppCompatActivity {
             case 0:
                 break;
             case 1:
-                switch (number_string) { //это стоит доработать
+                switch (number_string) {
                     case R.id.stringe:
                         Toast.makeText(GuitarTuning.this, "Как и в стандартном строе", Toast.LENGTH_LONG).show();
 
