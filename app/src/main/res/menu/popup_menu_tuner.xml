@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/E_major"
+        android:title="E major"/>
+
+    <item
+        android:id="@+id/Open_A"
+        android:title="Open A"/>
+
+    <item
+        android:id="@+id/Open_G"
+        android:title="Open G"/>
+    <item
+        android:id="@+id/Open_D"
+        android:title="Open D"/>
+    <item
+        android:id="@+id/Drop_D"
+        android:title="Drop D"/>
+
+</menu>

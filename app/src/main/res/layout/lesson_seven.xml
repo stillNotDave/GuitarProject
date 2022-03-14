@@ -40,7 +40,10 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/lesson_7_1"
+                android:text="В предыдущих уроках мы научились играть простой перебор и бой на 3/4.\n
+Сегодня мы мало того, что выучим новый бой, так мы еще и соединим перебор и бой.\n
+Для того чтобы сыграть песню «Метель» нужно знать басовые струны аккордов Em, C, G и D.\n
+Играется перебор на следующих аккордах вот так:"
                 android:textSize="20sp" />
         </LinearLayout>
 

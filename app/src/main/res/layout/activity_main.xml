@@ -44,7 +44,7 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:text="Тренировка слуха (пока недоступно)"
+        android:text="Тренировка слуха"
         app:backgroundTint="#42598F"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

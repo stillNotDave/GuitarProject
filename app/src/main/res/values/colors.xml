@@ -14,5 +14,15 @@
     <color name="ColorColkov">#C50808</color>
     <color name="Yellow">#DBEB0C</color>
     <color name="new_color">#000000</color>
+    <color name="colorPrimary">#009688</color>
+    <color name="colorPrimaryDark">#00796B</color>
+    <color name="colorAccent">#607D8B</color>
+    <color name="needleViewSmallTicksColorDark">#ffffff</color>
+    <color name="needleViewBigTicksColorDark">#ffffff</color>
+    <color name="second_urod">#BEC7CC</color>
+    <color name="urod">#757575</color>
+    <color name="needleViewBigTicksColorLight">#212121</color>
+    <color name="tuningItemNormalColor">#CCCCCC</color>
+    <color name="tuningItemSelectedColor">#FFFFFF</color>
 
 </resources>

@@ -1,7 +1,6 @@
 package com.example.myguitarclass;
 
 import android.media.MediaPlayer;
-import android.content.Context;
 
 public class Sound { //класс для хранения данных о звуках
     public int sound_id;
@@ -9,11 +8,7 @@ public class Sound { //класс для хранения данных о зву
     public Sound(int sound_id,String sound_name){
             this.sound_id=sound_id;
             this.sound_name=sound_name;
-
-
     }
-
-
 public static Sound[][] note_sound = {{new Sound(R.raw.string1_0,"E"),new Sound(R.raw.string1_1,"F"),new Sound(R.raw.string1_2,"F#"),new Sound(R.raw.string1_3,"G"),new Sound(R.raw.string1_4,"G#"),new Sound(R.raw.string1_5,"A"),new Sound(R.raw.string1_6,"A#"),new Sound(R.raw.string1_7,"B"),new Sound(R.raw.string1_8,"C"),new Sound(R.raw.string1_9,"C#"),new Sound(R.raw.string1_10,"D"),new Sound(R.raw.string1_11,"D#")},
                         {new Sound(R.raw.string2_0,"B"),new Sound(R.raw.string2_1,"C"),new Sound(R.raw.string2_2,"C#"),new Sound(R.raw.string2_3,"D"),new Sound(R.raw.string2_4,"D#"),new Sound(R.raw.string2_5,"E"),new Sound(R.raw.string2_6,"F"),new Sound(R.raw.string2_7,"F#"),new Sound(R.raw.string2_8,"G"),new Sound(R.raw.string2_9,"G#"),new Sound(R.raw.string2_10,"A"),new Sound(R.raw.string2_11,"A#")},
                         {new Sound(R.raw.string3_0,"G"),new Sound(R.raw.string3_1,"G#"),new Sound(R.raw.string3_2,"A"),new Sound(R.raw.string3_3,"A#"),new Sound(R.raw.string3_4,"B"),new Sound(R.raw.string3_5,"C"),new Sound(R.raw.string3_6,"C#"),new Sound(R.raw.string3_7,"D"),new Sound(R.raw.string3_8,"D#"),new Sound(R.raw.string3_9,"E"),new Sound(R.raw.string3_10,"F"),new Sound(R.raw.string3_11,"F#")},
@@ -31,7 +26,7 @@ public  static Sound[][] chord_sound = {{new Sound(R.raw.chord_d,"D"),new Sound(
     public  static Sound[][] tuning_sound = {{new Sound(R.raw.tuning_e_major,"E major"),new Sound(R.raw.string1_0,"e"),new Sound(R.raw.string1_0,"B"),
             new Sound(R.raw.string3_0,"G"),new Sound(R.raw.string4_0,"D"),new Sound(R.raw.string5_0,"A"),
             new Sound(R.raw.string6_0,"E")},
-            {new Sound(R.raw.tuning_drop_d,"Drop D"),new Sound(R.raw.string1_0,"e"),new Sound(R.raw.string2_0,"B"),
+            {new Sound(R.raw.tuning_drop_d,"Drop D"),new Sound(R.raw.string1_0,"e"),new Sound(R.raw.string1_0,"B"),
             new Sound(R.raw.string3_0,"G"),new Sound(R.raw.string4_0,"D"),new Sound(R.raw.string5_0,"A"),
             new Sound(R.raw.d_6str_for_dadgad_drop_d,"D")},
             {new Sound(R.raw.tuning_drop_c,"Drop C"),new Sound(R.raw.d_1str_for_dadgad_drop_c,"D"),new Sound(R.raw.a_2str_for_dadgad_drop_c,"A"),
@@ -53,13 +48,4 @@ public  static Sound[][] chord_sound = {{new Sound(R.raw.chord_d,"D"),new Sound(
         sound.seekTo(0); //для проигрыша трека с начала
         sound.start();
     }
-    public static void soundStop(MediaPlayer sound){
-        if (sound.isPlaying())
-            sound.pause();
-        sound.seekTo(0); //для проигрыша трека с начала
-
-    }
-
 }
-
-

@@ -1,16 +1,18 @@
 package com.example.myguitarclass;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+
+import static com.example.myguitarclass.NavUtils.openActivity;
 import static com.example.myguitarclass.Sound.soundPlay;
-import static com.example.myguitarclass.Sound.soundStop;
 
 public class LessonTwo extends Activity {
-
+    Context context = this;
     private Button buttonBack;
     private Button boiOne;
     private Button boiWithChords;
@@ -18,8 +20,10 @@ public class LessonTwo extends Activity {
     private Button d;
 
 
-    private MediaPlayer Player;
-
+    private MediaPlayer boiNumberOne;
+    private MediaPlayer boiNumberOneWithChords;
+    private MediaPlayer chordEm;
+    private MediaPlayer chordD;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,71 +36,52 @@ public class LessonTwo extends Activity {
             @Override
             public void onClick(View v) {
                 finish();
-                openActivity(LessonList.class);
+                openActivity(context,LessonList.class);
             }
         });
 
-        Player = MediaPlayer.create(this,R.raw.boi_one);
+        boiNumberOne = MediaPlayer.create(this,R.raw.boi_one);
+        boiNumberOneWithChords = MediaPlayer.create(this,R.raw.boi_one_with_chords);
+        chordEm = MediaPlayer.create(this,R.raw.chord_em);
+        chordD = MediaPlayer.create(this,R.raw.chord_d);
 
 
         boiOne = findViewById(R.id.buttonBoiOne);
         boiOne.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                soundStop(Player);
-                Player = ChangeSound(R.raw.boi_one);
-
-                soundPlay(Player);
-
+                soundPlay(boiNumberOne);
             }
         });
         boiWithChords = findViewById(R.id.buttonBoiOneWithChords);
         boiWithChords.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                soundStop(Player);
-                Player = ChangeSound(R.raw.boi_one_with_chords);
-
-                soundPlay(Player);
-
+                soundPlay(boiNumberOneWithChords);
             }
         });
         em = findViewById(R.id.buttonEm);
         em.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                soundStop(Player);
-                Player = ChangeSound(R.raw.chord_em);
-
-                soundPlay(Player);
-
+                soundPlay(chordEm);
             }
         });
         d = findViewById(R.id.buttonD);
         d.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                soundStop(Player);
-                Player = ChangeSound(R.raw.chord_d);
-
-                soundPlay(Player);
+                soundPlay(chordD);
             }
         });
 
     }
+    @Override
+    protected void onStop() {
+        super.onStop();
+        finish();
 
-    public void openActivity(Class<?> cls) {
+    }
 
-        Intent a = new Intent(this, cls);
-        a.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-        startActivity(a);
-    }
-    public MediaPlayer ChangeSound(int sound){
-        MediaPlayer mp = MediaPlayer.create(this,sound);
-        return mp;
-    }
 
 }
