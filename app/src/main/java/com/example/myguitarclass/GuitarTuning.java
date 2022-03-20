@@ -1,21 +1,20 @@
 package com.example.myguitarclass;
 
-import androidx.appcompat.app.AppCompatActivity;
-
-import android.annotation.SuppressLint;
-import android.content.Context;
-import android.content.Intent;
-import android.media.MediaPlayer;
-import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
-import android.widget.PopupMenu;
-import android.view.MenuItem;
-import android.widget.Toast;
-
 import static com.example.myguitarclass.NavUtils.openActivity;
 import static com.example.myguitarclass.Sound.soundPlay;
 import static com.example.myguitarclass.Sound.tuning_sound;
+
+import android.annotation.SuppressLint;
+import android.content.Context;
+import android.media.MediaPlayer;
+import android.os.Bundle;
+import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.PopupMenu;
+import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class GuitarTuning extends AppCompatActivity {
     Context context = this;
@@ -31,32 +30,32 @@ public class GuitarTuning extends AppCompatActivity {
 
     int numberTuning=0;
 
-    private MediaPlayer title_sound;
-    private MediaPlayer string_one;
-    private MediaPlayer string_two;
-    private MediaPlayer string_three;
-    private MediaPlayer string_four;
-    private MediaPlayer string_five;
-    private MediaPlayer string_six;
+    private MediaPlayer titleSound;
+    private MediaPlayer stringOne;
+    private MediaPlayer stringTwo;
+    private MediaPlayer stringThree;
+    private MediaPlayer stringFour;
+    private MediaPlayer stringFive;
+    private MediaPlayer stringSix;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.guitar_tuning);
 
-        title_sound = MediaPlayer.create(this,R.raw.tuning_e_major);
-        string_one = MediaPlayer.create(this,R.raw.string1_0);
-        string_two = MediaPlayer.create(this,R.raw.string2_0);
-        string_three = MediaPlayer.create(this,R.raw.string3_0);
-        string_four = MediaPlayer.create(this, R.raw.string4_0);
-        string_five = MediaPlayer.create(this,R.raw.string5_0);
-        string_six = MediaPlayer.create(this,R.raw.string6_0);
+        titleSound = MediaPlayer.create(this,R.raw.tuning_e_major);
+        stringOne = MediaPlayer.create(this,R.raw.string1_0);
+        stringTwo = MediaPlayer.create(this,R.raw.string2_0);
+        stringThree = MediaPlayer.create(this,R.raw.string3_0);
+        stringFour = MediaPlayer.create(this, R.raw.string4_0);
+        stringFive = MediaPlayer.create(this,R.raw.string5_0);
+        stringSix = MediaPlayer.create(this,R.raw.string6_0);
 
         buttonTitle=findViewById(R.id.buttonDm);
         buttonTitle.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                soundPlay(title_sound);
+                soundPlay(titleSound);
             }
         });
 
@@ -73,7 +72,7 @@ public class GuitarTuning extends AppCompatActivity {
         buttonStringOne.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                soundPlay(string_one);
+                soundPlay(stringOne);
                 Promt_toast(numberTuning,v.getId());
             }
         });
@@ -82,7 +81,7 @@ public class GuitarTuning extends AppCompatActivity {
         buttonStringTwo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                soundPlay(string_two);
+                soundPlay(stringTwo);
                 Promt_toast(numberTuning,v.getId());
             }
         });
@@ -91,7 +90,7 @@ public class GuitarTuning extends AppCompatActivity {
         buttonStringThree.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                soundPlay(string_three);
+                soundPlay(stringThree);
                 Promt_toast(numberTuning,v.getId());
             }
         });
@@ -100,7 +99,7 @@ public class GuitarTuning extends AppCompatActivity {
         buttonStringFour.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                soundPlay(string_four);
+                soundPlay(stringFour);
                 Promt_toast(numberTuning,v.getId());
             }
         });
@@ -109,7 +108,7 @@ public class GuitarTuning extends AppCompatActivity {
         buttonStringFive.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                soundPlay(string_five);
+                soundPlay(stringFive);
                 Promt_toast(numberTuning,v.getId());
             }
         });
@@ -118,7 +117,7 @@ public class GuitarTuning extends AppCompatActivity {
         buttonStringSix.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                soundPlay(string_six);
+                soundPlay(stringSix);
                 Promt_toast(numberTuning,v.getId());
             }
 
@@ -141,23 +140,33 @@ public class GuitarTuning extends AppCompatActivity {
                             case R.id.E_major:
                                 numberTuning=0;
                                 Change_tuning();
-
                                 return true;
+
                             case R.id.Drop_D:
                                 numberTuning=1;
                                 Change_tuning();
-
                                 return true;
+
                             case R.id.Drop_C:
                                 numberTuning=2;
                                 Change_tuning();
-
                                 return true;
+
                             case R.id.DADGAD:
                                 numberTuning=3;
                                 Change_tuning();
-
                                 return true;
+
+                            case R.id.Open_D:
+                                numberTuning=4;
+                                Change_tuning();
+                                return true;
+
+                            case R.id.Open_G:
+                                numberTuning=5;
+                                Change_tuning();
+                                return true;
+
                             default:
                                 return false;
                         }
@@ -171,9 +180,7 @@ public class GuitarTuning extends AppCompatActivity {
     @Override
     protected void onStop() {
         super.onStop();
-
         finish();
-
     }
 
     /*public void openActivity_MainActivity(){
@@ -193,77 +200,80 @@ public class GuitarTuning extends AppCompatActivity {
     {
 
         switch (number_tuning){
-            case 0:
+            case 0: //e major
                 break;
-            case 1:
-                switch (number_string) { //это стоит доработать
+            case 1: // drop d
+                switch (number_string) {
                     case R.id.stringe:
-                        Toast.makeText(GuitarTuning.this, "Как и в стандартном строе", Toast.LENGTH_LONG).show();
-
-                        break;
                     case R.id.stringB:
-                        Toast.makeText(GuitarTuning.this,"Как и в стандартном строе", Toast.LENGTH_LONG).show();
 
-                        break;
                     case R.id.stringG:
-                        Toast.makeText(GuitarTuning.this,"Как и в стандартном строе", Toast.LENGTH_LONG).show();
-                        break;
                     case R.id.stringD:
-                        Toast.makeText(GuitarTuning.this,"Как и в стандартном строе", Toast.LENGTH_LONG).show();
-                        break;
                     case R.id.stringA:
-                        Toast.makeText(GuitarTuning.this,"Как и в стандартном строе", Toast.LENGTH_LONG).show();
+                        Toast.makeText(GuitarTuning.this, "Как и в стандартном строе", Toast.LENGTH_LONG).show();
                         break;
                     case R.id.stringE:
                         Toast.makeText(GuitarTuning.this,"Опустите струну на тон относительно стандартного строя", Toast.LENGTH_LONG).show();
-
                         break;
                 }
                 break;
-            case 2:
+            case 2: //drop c
                 switch (number_string) {
                     case R.id.stringe:
-                        Toast.makeText(GuitarTuning.this, "Опустите струну на тон относительно стандартного строя", Toast.LENGTH_LONG).show();
-                        break;
                     case R.id.stringB:
-                        Toast.makeText(GuitarTuning.this,"Опустите струну на тон относительно стандартного строя", Toast.LENGTH_LONG).show();
-                        break;
                     case R.id.stringG:
-                        Toast.makeText(GuitarTuning.this,"Опустите струну на тон относительно стандартного строя", Toast.LENGTH_LONG).show();
-                        break;
                     case R.id.stringD:
-                        Toast.makeText(GuitarTuning.this,"Опустите струну на тон относительно стандартного строя", Toast.LENGTH_LONG).show();
-                        break;
                     case R.id.stringA:
-                        Toast.makeText(GuitarTuning.this,"Опустите струну на тон относительно стандартного строя", Toast.LENGTH_LONG).show();
+                        Toast.makeText(GuitarTuning.this, "Опустите струну на тон относительно стандартного строя", Toast.LENGTH_LONG).show();
                         break;
                     case R.id.stringE:
                         Toast.makeText(GuitarTuning.this,"Опустите струну на 2 тона относительно стандартного строя", Toast.LENGTH_LONG).show();
                         break;
                 }
                 break;
-            case 3:
+            case 3: //dadgad
                 switch (number_string) {
                     case R.id.stringe:
+                    case R.id.stringB:
+                    case R.id.stringE:
                         Toast.makeText(GuitarTuning.this, "Опустите струну на тон относительно стандартного строя", Toast.LENGTH_LONG).show();
                         break;
-                    case R.id.stringB:
-                        Toast.makeText(GuitarTuning.this,"Опустите струну на тон относительно стандартного строя", Toast.LENGTH_LONG).show();
-                        break;
                     case R.id.stringG:
-                        Toast.makeText(GuitarTuning.this,"Как и в стандартном строе", Toast.LENGTH_LONG).show();
-                        break;
                     case R.id.stringD:
-                        Toast.makeText(GuitarTuning.this,"Как и в стандартном строе", Toast.LENGTH_LONG).show();
-                        break;
                     case R.id.stringA:
                         Toast.makeText(GuitarTuning.this,"Как и в стандартном строе", Toast.LENGTH_LONG).show();
                         break;
+                }
+                break;
+            case 4: //open d
+                switch (number_string){
+                    case R.id.stringe:
+                    case R.id.stringB:
                     case R.id.stringE:
-                        Toast.makeText(GuitarTuning.this,"Опустите струну на тон относительно стандартного строя", Toast.LENGTH_LONG).show();
+                        Toast.makeText(GuitarTuning.this, "Опустите струну на тон относительно стандартного строя", Toast.LENGTH_LONG).show();
+                        break;
+                    case R.id.stringG:
+                        Toast.makeText(GuitarTuning.this, "Опустите струну на пол тона относительно стандартного строя", Toast.LENGTH_LONG).show();
+                        break;
+                    case R.id.stringD:
+                    case R.id.stringA:
+                        Toast.makeText(GuitarTuning.this,"Как и в стандартном строе", Toast.LENGTH_LONG).show();
                         break;
                 }
                 break;
+            case 5: //open g
+                switch (number_string){
+                    case R.id.stringe:
+                    case R.id.stringA:
+                    case R.id.stringE:
+                        Toast.makeText(GuitarTuning.this, "Опустите струну тон относительно стандартного строя", Toast.LENGTH_LONG).show();
+                        break;
+                    case R.id.stringB:
+                    case R.id.stringG:
+                    case R.id.stringD:
+                        Toast.makeText(GuitarTuning.this,"Как и в стандартном строе", Toast.LENGTH_LONG).show();
+                        break;
+                }
         }
     }
     public void Change_tuning(){
@@ -275,13 +285,13 @@ public class GuitarTuning extends AppCompatActivity {
         buttonStringFive.setText(tuning_sound[numberTuning][5].getSound_name());
         buttonStringSix.setText(tuning_sound[numberTuning][6].getSound_name());
 
-        title_sound=ChangeSound(tuning_sound[numberTuning][0].getSound_id());
-        string_one=ChangeSound(tuning_sound[numberTuning][1].getSound_id());
-        string_two=ChangeSound(tuning_sound[numberTuning][2].getSound_id());
-        string_three = ChangeSound(tuning_sound[numberTuning][3].getSound_id());
-        string_four = ChangeSound(tuning_sound[numberTuning][4].getSound_id());
-        string_five = ChangeSound(tuning_sound[numberTuning][5].getSound_id());
-        string_six=ChangeSound(tuning_sound[numberTuning][6].getSound_id());
+        titleSound=ChangeSound(tuning_sound[numberTuning][0].getSound_id());
+        stringOne=ChangeSound(tuning_sound[numberTuning][1].getSound_id());
+        stringTwo=ChangeSound(tuning_sound[numberTuning][2].getSound_id());
+        stringThree = ChangeSound(tuning_sound[numberTuning][3].getSound_id());
+        stringFour = ChangeSound(tuning_sound[numberTuning][4].getSound_id());
+        stringFive = ChangeSound(tuning_sound[numberTuning][5].getSound_id());
+        stringSix=ChangeSound(tuning_sound[numberTuning][6].getSound_id());
     }
 
 

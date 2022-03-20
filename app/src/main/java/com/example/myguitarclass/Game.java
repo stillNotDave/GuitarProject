@@ -1,31 +1,30 @@
 package com.example.myguitarclass;
 
-import androidx.appcompat.app.AppCompatActivity;
+import static com.example.myguitarclass.ChooseString.paramString;
+import static com.example.myguitarclass.NavUtils.openActivity;
+import static com.example.myguitarclass.Training.paramIntent;
 
 import android.content.Context;
-import android.content.Intent;
 import android.graphics.Color;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
+
 import java.util.Random;
-
-
-import static com.example.myguitarclass.ChooseString.paramString;
-import static com.example.myguitarclass.NavUtils.openActivity;
-import static com.example.myguitarclass.Training.paramIntent;
 
 
 public class Game extends AppCompatActivity {
     Context context = this;
     private  Button buttonBack;
     private  Button buttonSoundPlay;
-    private  Button button_one;
-    private  Button button_two;
-    private  Button button_three;
-    private  Button button_four;
+    private  Button buttonOne;
+    private  Button buttonTwo;
+    private  Button buttonThree;
+    private  Button buttonFour;
     static int position;
     int color;
     int answerContainerOnClick=0; //для хранения номера нажатой кнопки
@@ -66,8 +65,8 @@ public class Game extends AppCompatActivity {
             }
         });
 
-        button_one=findViewById(R.id.otvet1);
-        button_one.setOnClickListener(new View.OnClickListener() {
+        buttonOne=findViewById(R.id.otvet1);
+        buttonOne.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 answerContainerOnClick=0;
@@ -76,9 +75,8 @@ public class Game extends AppCompatActivity {
             }
         });
 
-        button_two=findViewById(R.id.otvet2);
-
-        button_two.setOnClickListener(new View.OnClickListener() {
+        buttonTwo=findViewById(R.id.otvet2);
+        buttonTwo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 answerContainerOnClick=1;
@@ -87,9 +85,9 @@ public class Game extends AppCompatActivity {
             }
         });
 
-        button_three=findViewById(R.id.otvet3);
+        buttonThree=findViewById(R.id.otvet3);
 
-        button_three.setOnClickListener(new View.OnClickListener() {
+        buttonThree.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 answerContainerOnClick=2;
@@ -98,8 +96,8 @@ public class Game extends AppCompatActivity {
             }
         });
 
-        button_four=findViewById(R.id.otvet4);
-        button_four.setOnClickListener(new View.OnClickListener() {
+        buttonFour=findViewById(R.id.otvet4);
+        buttonFour.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 answerContainerOnClick=3;
@@ -226,10 +224,10 @@ public class Game extends AppCompatActivity {
     }
     public void ChangeTextOnButton()
     {
-        button_one.setText(soundContainer[paramString][forText[0]].getSound_name());//в зависимости от выбранной струны выводин название нот на кнопки
-        button_two.setText(soundContainer[paramString][forText[1]].getSound_name());
-        button_three.setText(soundContainer[paramString][forText[2]].getSound_name());
-        button_four.setText(soundContainer[paramString][forText[3]].getSound_name());
+        buttonOne.setText(soundContainer[paramString][forText[0]].getSound_name());//в зависимости от выбранной струны выводин название нот на кнопки
+        buttonTwo.setText(soundContainer[paramString][forText[1]].getSound_name());
+        buttonThree.setText(soundContainer[paramString][forText[2]].getSound_name());
+        buttonFour.setText(soundContainer[paramString][forText[3]].getSound_name());
     }
 
 }
