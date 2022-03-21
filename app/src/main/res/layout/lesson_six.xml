@@ -19,7 +19,7 @@
                 android:id="@+id/back"
                 android:layout_width="90dp"
                 android:layout_height="wrap_content"
-                android:text="Назад"
+                android:text="@string/back"
                 app:backgroundTint="@color/purple_700"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -40,39 +40,32 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="В этом уроке мы разнообразим песню «Прогулки по воде», а так же научимся играть перебором."
+                android:text="@string/lessonSix1"
                 android:textSize="20sp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Интересно будет играть эту песню если динамечиски будет какая-то разница. Например, мы можем первый куплет сыграть перебором, потом перейдем на бой с щелчками, а в третьем куплете сыграем тем же боем, но без заглушки.\n
-Таким образом, песня приобретет нарастающий эффект."
+                android:text="@string/lessonSix2"
                 android:textSize="20sp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Для начала мы должны научиться играть перебор. Нужно понять, что у каждого аккорда есть своя басовая струна.\n
-Таким образом, у аккордов E и G перебор начинается с 6 струны;\n
-A, H и C – с 5 струны;\n
-D – с 4 струны."
+                android:text="@string/lessonSix3"
                 android:textSize="20sp" />
 
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Когда мы ставим аккорд E или Em, перебор мы будем начинать с 6 струны.\n
-Если мы поставим аккорд A, Am, H7, C то перебор будет начинаться уже с 5 струны.\n
-А дальше каждой струне соответствует свой палец. То есть третью струну мы дергаем указательным пальцем, вторую – средним, и первую – безымянным."
+                android:text="@string/lessonSix4"
                 android:textSize="20sp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="В этой песне перебор будет звучать так: Тоника (6, 5 или 4 струна в зависимости от аккорда), потом струны 3-2-1-2-3.\n
-Нажмите на кнопку ниже и вы услышите, как это должно звучать на аккорде Am. Попробуйте повторить."
+                android:text="@string/lessonSix5"
                 android:textSize="20sp" />
         </LinearLayout>
 
@@ -90,7 +83,7 @@ D – с 4 струны."
                 android:layout_marginEnd="80dp"
                 android:layout_marginRight="80dp"
                 android:background="@color/purple_700"
-                android:text="Перебор на Am"
+                android:text="@string/lessonSix6"
                 android:textAllCaps="false"
                 android:textSize="18sp"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -105,20 +98,7 @@ D – с 4 струны."
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Один такой перебор равен одному бою на три четверти, который мы выучили в прошлом уроке. И в куплете нужно играть по 2 перебора на каждом аккорде, а в припеве по одному.\n
-В нашем случае, басовые струны которые мы будет дергать большим пальцем в припеве такие:\n
-
-G – 6 струна;\n
-D – 4 струна;\n
-Am – 5 струна;\n
-Em – 6 струна;\n
-G – 6 струна;\n
-D – 4 струна;\n
-Am – 5 струна;\n
-H7 – 5 струна;\n
-Играем вот так: 6-3-2-1-2-3 потом переходим на новый аккорд и играем:\n
-4-3-2-1-2-3 и так далее. \n
-Припев будет звучать вот так."
+            android:text="@string/lessonSix7"
             android:textSize="20sp" />
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -149,7 +129,7 @@ H7 – 5 струна;\n
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Думаю, все понятно."
+            android:text="@string/lessonSix8"
             android:textSize="20sp" />
 
 

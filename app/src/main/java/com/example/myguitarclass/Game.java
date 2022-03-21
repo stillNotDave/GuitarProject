@@ -42,7 +42,7 @@ public class Game extends AppCompatActivity {
 
         TextView textView = findViewById(R.id.textView3);
         titleSound = RandomSound();
-        titleSound.setVolume(30,30);
+        //titleSound.setVolume(30,30);
         MakeAnswerArr();
         PrepareForText();
         buttonBack=findViewById(R.id.button20);
@@ -201,21 +201,6 @@ public class Game extends AppCompatActivity {
         ChangeTextOnButton();
         return str;
     }
-    /*public void openActivity(){ //для перехода назад по активностям
-        Intent intent = new Intent();
-
-        if(paramIntent==1) {
-            intent = new Intent(this, Training.class);
-            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-            startActivity(intent);
-        }
-        else
-        {
-            intent = new Intent(this, ChooseString.class);
-            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-            startActivity(intent);
-        }
-    }*/
 
     public int  Randomize() {
         Random random = new Random();

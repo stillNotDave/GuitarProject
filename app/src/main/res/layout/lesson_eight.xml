@@ -19,7 +19,7 @@
                 android:id="@+id/back"
                 android:layout_width="90dp"
                 android:layout_height="wrap_content"
-                android:text="Назад"
+                android:text="@string/back"
                 app:backgroundTint="@color/purple_700"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -40,8 +40,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Сегодня мы продолжим изучать бой с перебором, но уже на другой схеме.\n
-И так, переходим к песне. Она играется следующим образом. Куплет играется боем с перебором на таких аккордах:"
+                android:text="@string/lessonEight1"
                 android:textSize="20sp" />
         </LinearLayout>
 
@@ -51,7 +50,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Весь куплет играется на этих четырех аккордах."
+            android:text="@string/lessonEight2"
             android:textSize="20sp" />
 
 
@@ -59,34 +58,25 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="G – 6-3-вниз-вверх (2 раза)\n
-C – 5-3-вниз-вверх\n
-G – 6-3-вниз-вверх\n
-C – 5-3-вниз-вверх\n
-G – 6-3-вниз-вверх\n
-D – 4-3-вниз-вверх\n
-Em – 6-3-вниз-вверх"
+            android:text="@string/lessonEight3"
             android:textSize="20sp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="В припеве мы переходим на бой№1 без заглушки щелчка (вниз-вверх-щелчок-вверх). Играем такие аккорды:\n
-G (2 раза)-C-G (3 раза)-D-Em."
+            android:text="@string/lessonEight4"
             android:textSize="20sp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Так же, если у вас еще есть проблемы с перебором, попробуйте поиграть следующий перебор на любых аккордах.\n
-Если у вас все получилось, то на этом этапе проблем с перебором у вас больше не будет.\n
-Перебор звучит так: Тоника-3-2-3-1-3-2-3."
+            android:text="@string/lessonEight5"
             android:textSize="20sp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Напоминаю, что тоника – это басовая струна аккорда. Ей может быть 6-4 струна."
+            android:text="@string/lessonEight6"
             android:textSize="20sp" />
 
 

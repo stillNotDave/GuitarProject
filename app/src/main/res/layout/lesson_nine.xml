@@ -19,7 +19,7 @@
                 android:id="@+id/back"
                 android:layout_width="90dp"
                 android:layout_height="wrap_content"
-                android:text="Назад"
+                android:text="@string/back"
                 app:backgroundTint="@color/purple_700"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -41,10 +41,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="И так, мы дошли до темы, которая обычно отталкивает всех новичков. Это баррэ.\n
-С изучением баррэ открывается море новых возможностей, таких как ритмы регги, глухие ноты и еще много всего.\n
-Баррэ отличается от обычного аккорда тем, что в баррэ указательный палец должен передавливать все струны, а остальные пальцы формируют оставшийся аккорд.\n
-И так, возьмем наш первый аккорд на баррэ – Hm. Ставится он так:"
+                android:text="@string/lessonNine1"
                 android:textSize="20sp" />
         </LinearLayout>
 
@@ -69,41 +66,31 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Сначала поставьте средний палец на вторую струну третий лад, безымянный на четвертую струну четвертый лад и мизинец на третью струну четвертый лад. А потом попробуйте передавить указательным пальцем второй лад полностью."
+            android:text="@string/lessonNine2"
             android:textSize="20sp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Сначала аккорд будет звучать плохо, струны будут передавливаться не до конца. Но это поправимо лишь путем тренировок. Пробуйте снова и снова, пока звучание не будет нормальным."
+            android:text="@string/lessonNine3"
             android:textSize="20sp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="В качестве примера мы возьмем песню группы Кино «Кукушка».\n
-Куплет играется боем №2(вниз-щелчок-вверх-вверх-щелчок-вверх) на следующих аккордах:\n
-Hm (4 раза)\n
-A\n
-G\n
-Hm (2 раза)\n
-Аккорд A ставит так: указательный, средний и безымянный палец ставятся на второй лад с четвертой по вторую струну.\n
-Вначале на баррэ будет очень затекать рука, звук будет плохой, но самое главное – вовремя переходить с аккорда на аккорд."
+            android:text="@string/lessonNine4"
             android:textSize="20sp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Припев играется на следующих аккордах:\n
-A\n
-G\n
-Hm (2 раза)."
+            android:text="@string/lessonNine5"
             android:textSize="20sp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Поиграйте эту песню дня 2-3, когда баррэ будет звучать хорошо, возьмем на баррэ и аккорды A и G. Они ставятся одинаково, только G – на третьем ладу, а A – на пятом."
+            android:text="@string/lessonNine6"
             android:textSize="20sp" />
 
 

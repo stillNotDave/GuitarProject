@@ -19,7 +19,7 @@
                 android:id="@+id/back"
                 android:layout_width="90dp"
                 android:layout_height="wrap_content"
-                android:text="Назад"
+                android:text="@string/back"
                 app:backgroundTint="@color/purple_700"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -40,7 +40,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Сегодня мы немного разнообразим то, что мы уже прошли. В прошлом уроке мы совместили в одной песне два боя, а сегодня мы разучим песню, которая играется полностью Боем №2, но играется она быстро."
+                android:text="@string/lessonFour1"
                 android:textSize="20sp" />
         </LinearLayout>
 
@@ -48,7 +48,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Особенностью является то, что в припеве мы будем играть без заглушки(щелчка). Вместо него мы будем просто бить по струнам вниз. Получается так:"
+            android:text="@string/lessonFour2"
             android:textSize="20sp" />
 
 
@@ -65,10 +65,10 @@
                 android:layout_marginLeft="80dp"
                 android:layout_marginEnd="80dp"
                 android:layout_marginRight="80dp"
-                android:background="@color/purple_700"
-                android:text="Бой №2 без заглушки"
+                android:text="@string/lessonFour3"
                 android:textAllCaps="false"
                 android:textSize="18sp"
+
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
@@ -79,9 +79,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Вся песня играется Боев №2 по одному бою на каждый аккорд, а аккорды такие:\n
-Em C G H7.\n
-В провой руке мы продолжаем учиться играть быстро и разнообразно, а левой рукой продолжаем переставлять аккорды быстро."
+            android:text="@string/lessonFour4"
             android:textSize="20sp" />
 
 

@@ -18,7 +18,7 @@
                 android:id="@+id/back"
                 android:layout_width="90dp"
                 android:layout_height="wrap_content"
-                android:text="Назад"
+                android:text="@string/back"
                 app:backgroundTint="@color/purple_700"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -39,7 +39,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="На прошлых занятиях мы научились брать баррэ. Сегодня мы левую руку оставим в покое, она не научится ничему новому, а правой рукой мы научимся играть скоростные ритмы. Это очень сложный урок. Его нужно освоить целиком и полностью."
+                android:text="@string/lessonThirteen1"
                 android:textSize="20sp" />
         </LinearLayout>
 
@@ -49,47 +49,25 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Сегодня мы научимся играть бой-галоп. Для того чтобы научиться его играть, сначала вам нужно потрясти правой кистью в расслабленном положении. В этот момент немного подожмите пальцы.\n
-В таком положении должна находиться рука при игре этого боя.\n
-Трясите руку и перенесите ее на струны. Пробуйте пока не услышите громкого и четкого звучания.\n
-Когда у вас начнет получаться, нужно выстроить ритмический рисунок. Он такой:\n
-Вниз-вверх-вниз."
+            android:text="@string/lessonThirteen2"
             android:textSize="20sp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Развивайте скорость и точность пока не поймете, что ваша рука не устает и гитара дает нормальный звук.\n
-Важно, чтобы в движении руки была естественность. Как будто вы просто ей трясете.\n
-Постепенно старайтесь нарабатывать скорость не сбиваясь.\n
-Вот на этом моменте вы должны остановиться на пару дней.\n"
+            android:text="@string/lessonThirteen3"
             android:textSize="20sp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Теперь мы разберем как понимать этот ритм и в какой момент нужно переставлять аккорды в этом ритме.\n
-Первый и каждый последующий аккорд начинается с удара вниз, после чего уже идет бой. То есть:\n
-Вниз-вниз-вверх-вниз.\n
-Попробуйте так сыграть. По одному бою на каждый аккорд.\n
-Теперь попробуйте сыграть тоже самое, только уже по 4 боя на каждом аккорде.\n
-И так, вы потратили какое-то время на понимание того, как переставляются аккорды при игре боя-галоп. Теперь давайте сыграем песню Группы Кино «Стук»."
+            android:text="@string/lessonThirteen4"
             android:textSize="20sp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Куплет играется на аккордах:\n
-Em (16 боев галоп)\n
-Am (8 боев галоп)\n
-Em (8 боев галоп)\n
-А припев играется так:\n
-G на баррэ (4 боя галоп)\n
-Am (4 боя галоп)\n
-Em (8 боев галоп)\n
-И в конце припева, на словах «Я скажу одно лишь слово» играем следующие аккорды:\n
-Am (4 боя галоп)\n
-Не стоит забрасывать обучение если у вас что-то не получается. В начале урока было сказано, что это сложный урок. Вы можете потратить на него гораздо больше одной недели"
+            android:text="@string/lessonThirteen5"
             android:textSize="20sp" />
     </LinearLayout>
 

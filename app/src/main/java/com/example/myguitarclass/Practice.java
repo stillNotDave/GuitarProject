@@ -40,7 +40,7 @@ public class Practice extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                openActivity(GuitarTuning.class);
+                openActivity(Camerton.class);
             }
         });
     }

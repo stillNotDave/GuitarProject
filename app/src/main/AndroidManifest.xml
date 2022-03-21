@@ -32,14 +32,10 @@
         <activity android:name=".Training"
 
             android:screenOrientation="portrait"/>
-        <activity android:name=".GuitarTuning"
+        <activity android:name=".Camerton"
 
             android:screenOrientation="portrait"/>
         <activity android:name=".Practice"
-
-            android:screenOrientation="portrait"
-            />
-        <activity android:name=".LessonActivity"
 
             android:screenOrientation="portrait"
             />

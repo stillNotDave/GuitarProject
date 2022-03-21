@@ -18,7 +18,7 @@
                 android:id="@+id/back"
                 android:layout_width="90dp"
                 android:layout_height="wrap_content"
-                android:text="Назад"
+                android:text="@string/back"
                 app:backgroundTint="@color/purple_700"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -39,7 +39,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Сегодня мы прибавим нагрузку на правую руку. Аккорды будут так же на баррэ меняться, а в правой руке будут меняться бои, но все они будут в одном счете, что позволит вам петь. "
+                android:text="@string/lessonTwelve1"
                 android:textSize="20sp" />
         </LinearLayout>
 
@@ -49,12 +49,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Сегодня мы научимся играть песню «Батарейка» группы жуки. Аккорды в ней такие:\n
-Am(баррэ)\n
-G(баррэ)\n
-F(баррэ)\n
-E\n
-Все эти аккорды вы уже знаете."
+            android:text="@string/lessonTwelve2"
             android:textSize="20sp" />
 
 
@@ -62,20 +57,13 @@ E\n
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="В левой руке у нас всю песню будут эти четыре аккорда. По одному бою на каждом аккорде.\n
-Вступление и первый куплет мы проиграем вот таким боем с перебором:\n
-6-3-1-вниз-вверх.\n
-Тоника здесь на всех аккордах одна. Попробуйте сыграть медленно и постепенно набирайте темп до того темпа, в котором играется эта песня."
+            android:text="@string/lessonTwelve3"
             android:textSize="20sp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="В конце первого куплета на аккорде Е мы переходим бой. Бой такой:\n
-Вниз-вниз-щелчок (без заглушки)-вниз-вверх.\n
-Второй куплет играется тем же боем что и припев, только щелчок уже глушим. И опять на аккорде Е перестаем глушить щелчок и играем припев так же, как и прерыдущий.\n
-Третий куплет можно играть тем же боем только без последних двух ударов. Вот так:\n
-Вниз-вниз-щелчок."
+            android:text="@string/lessonTwelve4"
             android:textSize="20sp" />
     </LinearLayout>
 

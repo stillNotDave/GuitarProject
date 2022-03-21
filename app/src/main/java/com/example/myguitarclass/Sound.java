@@ -83,6 +83,7 @@ public  static Sound[][] chord_sound = {{new Sound(R.raw.chord_d,"D"),new Sound(
     }
 
     public static void soundPlay(MediaPlayer sound){
+        sound.setVolume(30,30);
         sound.seekTo(0); //для проигрыша трека с начала
         sound.start();
     }

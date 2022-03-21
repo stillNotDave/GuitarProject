@@ -16,7 +16,7 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class GuitarTuning extends AppCompatActivity {
+public class Camerton extends AppCompatActivity {
     Context context = this;
     private  Button buttonBack;
     private  Button buttonTitle;
@@ -127,7 +127,7 @@ public class GuitarTuning extends AppCompatActivity {
         chooseTuning.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                PopupMenu popup = new PopupMenu(GuitarTuning.this, chooseTuning);//привязываем попуп к активностии и кнопке
+                PopupMenu popup = new PopupMenu(Camerton.this, chooseTuning);//привязываем попуп к активностии и кнопке
                 popup.getMenuInflater()
                         .inflate(R.menu.popup_menu, popup.getMenu());
 
@@ -183,13 +183,6 @@ public class GuitarTuning extends AppCompatActivity {
         finish();
     }
 
-    /*public void openActivity_MainActivity(){
-        Intent intent = new Intent(this,Practice.class); //кнопка назад, открыть предыдущую активность
-        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-        startActivity(intent);
-    }*/
-
-
 
     public MediaPlayer ChangeSound(int sound){
         MediaPlayer mp = MediaPlayer.create(this,sound);
@@ -210,10 +203,10 @@ public class GuitarTuning extends AppCompatActivity {
                     case R.id.stringG:
                     case R.id.stringD:
                     case R.id.stringA:
-                        Toast.makeText(GuitarTuning.this, "Как и в стандартном строе", Toast.LENGTH_LONG).show();
+                        Toast.makeText(Camerton.this, "Как и в стандартном строе", Toast.LENGTH_LONG).show();
                         break;
                     case R.id.stringE:
-                        Toast.makeText(GuitarTuning.this,"Опустите струну на тон относительно стандартного строя", Toast.LENGTH_LONG).show();
+                        Toast.makeText(Camerton.this,"Опустите струну на тон относительно стандартного строя", Toast.LENGTH_LONG).show();
                         break;
                 }
                 break;
@@ -224,10 +217,10 @@ public class GuitarTuning extends AppCompatActivity {
                     case R.id.stringG:
                     case R.id.stringD:
                     case R.id.stringA:
-                        Toast.makeText(GuitarTuning.this, "Опустите струну на тон относительно стандартного строя", Toast.LENGTH_LONG).show();
+                        Toast.makeText(Camerton.this, "Опустите струну на тон относительно стандартного строя", Toast.LENGTH_LONG).show();
                         break;
                     case R.id.stringE:
-                        Toast.makeText(GuitarTuning.this,"Опустите струну на 2 тона относительно стандартного строя", Toast.LENGTH_LONG).show();
+                        Toast.makeText(Camerton.this,"Опустите струну на 2 тона относительно стандартного строя", Toast.LENGTH_LONG).show();
                         break;
                 }
                 break;
@@ -236,12 +229,12 @@ public class GuitarTuning extends AppCompatActivity {
                     case R.id.stringe:
                     case R.id.stringB:
                     case R.id.stringE:
-                        Toast.makeText(GuitarTuning.this, "Опустите струну на тон относительно стандартного строя", Toast.LENGTH_LONG).show();
+                        Toast.makeText(Camerton.this, "Опустите струну на тон относительно стандартного строя", Toast.LENGTH_LONG).show();
                         break;
                     case R.id.stringG:
                     case R.id.stringD:
                     case R.id.stringA:
-                        Toast.makeText(GuitarTuning.this,"Как и в стандартном строе", Toast.LENGTH_LONG).show();
+                        Toast.makeText(Camerton.this,"Как и в стандартном строе", Toast.LENGTH_LONG).show();
                         break;
                 }
                 break;
@@ -250,14 +243,14 @@ public class GuitarTuning extends AppCompatActivity {
                     case R.id.stringe:
                     case R.id.stringB:
                     case R.id.stringE:
-                        Toast.makeText(GuitarTuning.this, "Опустите струну на тон относительно стандартного строя", Toast.LENGTH_LONG).show();
+                        Toast.makeText(Camerton.this, "Опустите струну на тон относительно стандартного строя", Toast.LENGTH_LONG).show();
                         break;
                     case R.id.stringG:
-                        Toast.makeText(GuitarTuning.this, "Опустите струну на пол тона относительно стандартного строя", Toast.LENGTH_LONG).show();
+                        Toast.makeText(Camerton.this, "Опустите струну на пол тона относительно стандартного строя", Toast.LENGTH_LONG).show();
                         break;
                     case R.id.stringD:
                     case R.id.stringA:
-                        Toast.makeText(GuitarTuning.this,"Как и в стандартном строе", Toast.LENGTH_LONG).show();
+                        Toast.makeText(Camerton.this,"Как и в стандартном строе", Toast.LENGTH_LONG).show();
                         break;
                 }
                 break;
@@ -266,12 +259,12 @@ public class GuitarTuning extends AppCompatActivity {
                     case R.id.stringe:
                     case R.id.stringA:
                     case R.id.stringE:
-                        Toast.makeText(GuitarTuning.this, "Опустите струну тон относительно стандартного строя", Toast.LENGTH_LONG).show();
+                        Toast.makeText(Camerton.this, "Опустите струну тон относительно стандартного строя", Toast.LENGTH_LONG).show();
                         break;
                     case R.id.stringB:
                     case R.id.stringG:
                     case R.id.stringD:
-                        Toast.makeText(GuitarTuning.this,"Как и в стандартном строе", Toast.LENGTH_LONG).show();
+                        Toast.makeText(Camerton.this,"Как и в стандартном строе", Toast.LENGTH_LONG).show();
                         break;
                 }
         }

@@ -26,7 +26,6 @@
         android:id="@+id/training_by_notes"
         android:layout_width="277dp"
         android:layout_height="100dp"
-
         android:text="По нотам"
         app:backgroundTint="@color/botton_color"
         app:layout_constraintBottom_toBottomOf="parent"

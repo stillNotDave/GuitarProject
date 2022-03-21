@@ -18,7 +18,7 @@
                 android:id="@+id/back"
                 android:layout_width="90dp"
                 android:layout_height="wrap_content"
-                android:text="Назад"
+                android:text="@string/back"
                 app:backgroundTint="@color/purple_700"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -39,8 +39,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Сегодня тему глухих нот и ритмов Регги мы отодвигаем в сторону и займемся переборами.\n
-Ритмы Регги у нас остается параллельной темой, которой вы продолжаете заниматься."
+                android:text="@string/lessonSeventeen1"
                 android:textSize="20sp" />
         </LinearLayout>
 
@@ -49,30 +48,19 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Сегодня мы научимся играть песню «Я хочу быть с тобой» группы Наутилус Помпилиус. В этой песне мы будем играть пятью разными переборами. И самое сложное, это вовремя переключаться с одного перебора на другой."
+            android:text="@string/lessonSeventeen2"
             android:textSize="20sp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="И так, первый перебор играется так:\n
-Тоника-3-1-3\n
-Второй перебор:\n
-Тоника-3-2-1-2-3-1-2\n
-Третий:\n
-Тоника-3-2-1\n
-Четвертый:\n
-Тоника-4-3-2-4-3-2-1\n
-И пятый:\n
-Тоника-4-3-пауза-2"
+            android:text="@string/lessonSeventeen3"
             android:textSize="20sp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Пятый перебор будет играться только на аккорде Е7. Он ставится как обычный аккорд Е, только мы еще добавляем мизинец на вторую струну третий лад.\n
-Вы ставите аккорд Е, играете первые 3 ноты перебора, а потом через паузу ставите мизинец и последнюю ноту.\n
-Звучать это будет так:"
+            android:text="@string/lessonSeventeen4"
             android:textSize="20sp" />
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -91,7 +79,7 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginBottom="16dp"
                 android:background="@color/purple_700"
-                android:text="Перебор на Е7"
+                android:text="@string/lessonSeventeen5"
                 android:textAllCaps="false"
                 android:textSize="18sp"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -104,15 +92,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Напротив аккорда будет написан номер перебора, которым мы будем его играть.\n
-Am – 1 способ\n
-G – 3 способ\n
-C – 2 способ\n
-C – 1 способ\n
-G – 1 способ\n
-F – 3 способ\n
-E – 3 способ\n
-Попробуйте сыграть эту часть без пауз."
+            android:text="@string/lessonSeventeen6"
             android:textSize="20sp" />
 
 
@@ -120,20 +100,13 @@ E – 3 способ\n
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Следующая часть:\n
-Am – 1 способ\n
-G – 1 способ\n
-C – 2 способ\n
-C – 1 способ\n
-G – 3 способ\n
-F – 4 способ\n
-E7 – 5 способ"
+            android:text="@string/lessonSeventeen7"
             android:textSize="20sp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="В этой песне у нас на каждый аккорд свой перебор. Совместив 2 части, мы сможем сыграть сначала куплет, потом припев."
+            android:text="@string/lessonSeventeen8"
             android:textSize="20sp" />
 
     </LinearLayout>

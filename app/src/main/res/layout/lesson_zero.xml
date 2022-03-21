@@ -19,7 +19,7 @@
                 android:id="@+id/back"
                 android:layout_width="90dp"
                 android:layout_height="wrap_content"
-                android:text="Назад"
+                android:text="@string/back"
                 app:backgroundTint="@color/purple_700"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -38,25 +38,19 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Стандартный строй гитары состоит из следующих нот:\n
-Первая струна – e;\n
-Вторая струна – B;\n
-Третья струна – G;\n
-Четвертая струна – D;\n
-Пятая струна – A;\n
-Шестая струна – E;"
+                android:text="@string/lessonZero1"
                 android:textSize="20sp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Самый лучший и полезный способ настройки — это настройка гитары на слух."
+                android:text="@string/lessonZero2"
                 android:textSize="20sp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Чтобы настроить первую струну нажмите на кнопку «е». Вы услышите, как должна звучать первая струна. Ваша задача – подтянуть вашу струну до того тона, который вы слышите после нажатия на кнопку.  Точно так же настраиваются и другие струны."
+                android:text="@string/lessonZero3"
                 android:textSize="20sp" />
         </LinearLayout>
 
@@ -160,7 +154,7 @@
                 android:text="e"
                 android:textAllCaps="false"
                 android:textSize="30sp"
-                app:backgroundTint="@color/Colki_Color"
+
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="parent"
@@ -170,28 +164,25 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Будьте осторожны и крутите колки медленно. Быстрое изменение тона струны может привести к ее разрыву."
+            android:text="@string/lessonZero4"
             android:textSize="20sp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Вторая струна – кнопка «B», третья – «G» и так далее."
+            android:text="@string/lessonZero5"
             android:textSize="20sp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Проверить правильно ли вы настроили гитару можно следующим способом. Зажмите вторую струну на пятом ладу. Она должна звучать в унисон (то есть одинаково) с первой открытой струной."
+            android:text="@string/lessonZero6"
             android:textSize="20sp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Третью струну зажмите на четвертом ладу. Она должна звучать в унисон со второй струной.\n
-Четвертую на пятом ладу, которая будет звучать так же как и открытая третья струна.\n
-Пятую тоже на пятом ладу. Она будет созвучна с уже с четвертой открытой струной.\n
-И шестую на пятом ладу – звучание будет как на пятой открытой струне."
+            android:text="@string/lessonZero7"
             android:textSize="20sp" />
 
     </LinearLayout>

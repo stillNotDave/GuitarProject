@@ -18,7 +18,7 @@
                 android:id="@+id/back"
                 android:layout_width="90dp"
                 android:layout_height="wrap_content"
-                android:text="Назад"
+                android:text="@string/back"
                 app:backgroundTint="@color/purple_700"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -39,7 +39,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="В прошлом уроке мы научились брать баррэ и поняли, что некоторые аккорды бывают как на баррэ, там и не на баррэ."
+                android:text="@string/lessonTen1"
                 android:textSize="20sp" />
         </LinearLayout>
 
@@ -49,7 +49,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Весь куплет играется на этих четырех аккордах."
+            android:text="@string/lessonTen2"
             android:textSize="20sp" />
 
 
@@ -57,9 +57,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="В первом уроке мы научились играть песню «Звезда по имени солнце». Сегодня мы попробуем сыграть эту же песню, но полностью на баррэ.\n
-Напоминаю, что вся песня играется боем № 1 по 4 раза на каждом аккорде.\n
-Аккорды выглядят так:"
+            android:text="@string/lessonTen3"
             android:textSize="20sp" />
 
 
@@ -84,13 +82,13 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Скорее всего у вас будут проблемы с аккордом C, но это поправимо практикой."
+            android:text="@string/lessonTen4"
             android:textSize="20sp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Учимся это играть где-то три дня. Сыграв эту песню, вы выучите все основные виды аккордов на баррэ."
+            android:text="@string/lessonTen5"
             android:textSize="20sp" />
 
     </LinearLayout>

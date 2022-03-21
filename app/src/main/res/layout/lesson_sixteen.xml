@@ -18,7 +18,7 @@
                 android:id="@+id/back"
                 android:layout_width="90dp"
                 android:layout_height="wrap_content"
-                android:text="Назад"
+                android:text="@string/back"
                 app:backgroundTint="@color/purple_700"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -39,9 +39,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Этот урок является продолжением предыдущих двух уроков. На прошлом уроке мы учились играть ритм Регги, состоящий из двух ударов вниз.\n
-Сегодня правая рука будет работать немного быстрее. И так. Берем за основу движение, которое мы играли в бое-галоп. Только там мы играли по 3 удара, а сегодня мы будем играть просто вниз-вверх. Два глухих удара, два звучных.\n
-Будет звучать это вот так:"
+                android:text="@string/lessonSixteen1"
                 android:textSize="20sp" />
         </LinearLayout>
 
@@ -61,7 +59,7 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginBottom="16dp"
                 android:background="@color/purple_700"
-                android:text="Ритм Регии"
+                android:text="@string/lessonSixteen2"
                 android:textAllCaps="false"
                 android:textSize="18sp"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -74,21 +72,19 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="А теперь попробуйте совместить изученное. Сыграйте аккорд А двумя ударами(глухой-звучный), а аккорд FM# четырьмя ударами(глухой-глухой-звучный-звучный)."
+            android:text="@string/lessonSixteen3"
             android:textSize="20sp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Теперь, усложним задачу еще сильнее. На аккорде А добавим один звучный удар вверх, то есть ритмический рисунок будет выглядеть вот так: вниз глухой-вниз звучный-вверх звучный. Мы как бы совместили два пройденных ритмических рисунка.\n
-На самом деле это не сложно, нужно просто немного попрактиковаться."
+            android:text="@string/lessonSixteen4"
             android:textSize="20sp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Допустим, вы какое-то время попрактиковались и уже без проблем можете любым из изученных ритмов-регги сыграть любые комбинации аккордов.\n
-Теперь давайте на аккорде FM# добавим вот такую взбивку. Звучит она так:"
+            android:text="@string/lessonSixteen5"
             android:textSize="20sp" />
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -120,8 +116,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Как видите, мы постоянно меняем местами заглушенные и звучные ноты.\n
-Пробуйте играть аккорд А любым из изученных боев, а аккорд FM# взбивкой."
+            android:text="@string/lessonSixteen6"
             android:textSize="20sp" />
 
 
@@ -129,7 +124,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="По сути, все что мы научились играть – это один и тот же бой, который просто имеет разные акценты. А по факту, весь бой укладывается в один ритмический рисунок."
+            android:text="@string/lessonSixteen7"
             android:textSize="20sp" />
 
     </LinearLayout>

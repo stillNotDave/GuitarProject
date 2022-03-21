@@ -19,7 +19,7 @@
                 android:id="@+id/back"
                 android:layout_width="90dp"
                 android:layout_height="wrap_content"
-                android:text="Назад"
+                android:text="@string/back"
                 app:backgroundTint="@color/purple_700"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -40,7 +40,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Наше первое занятие будет основано на том, что мы выучим первый ритмический рисунок. Играется он вот так:"
+                android:text="@string/lessonOne1"
                 android:textSize="20sp" />
         </LinearLayout>
 
@@ -57,7 +57,7 @@
                 android:layout_marginLeft="25dp"
                 android:layout_marginTop="16dp"
                 android:background="@color/purple_700"
-                android:text="Бой №1"
+                android:text="@string/lessonOne2"
                 android:textAllCaps="false"
                 android:textSize="18sp"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -85,16 +85,13 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Где крестик – это щелчок"
+            android:text="@string/lessonOne3"
             android:textSize="20sp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="И когда вы доведем правую руку до автоматизма, мы подключим левую руку и научимся зажимать первые аккорды.\n
-И уже в конце этого занятия вы сможете сыграть свою первую песню и поймете сам принцип игры на гитаре.\n
-И так, приступим к нашему бою(ритмическому рисунку) №1. Играется он так: вниз-вверх-шелчок-вверх.\n
-Вниз и вверх играется большим пальцем, щелчок - всей рукой."
+            android:text="@string/lessonOne4"
             android:textSize="20sp" />
 
 
@@ -102,22 +99,19 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Для начала, чтобы привыкнуть как правильно бить по струнам, нужно просто поиграть вниз-вверх-вниз-вверх много раз."
+            android:text="@string/lessonOne5"
             android:textSize="20sp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Щелчок делается следующим образом: подгибаем пальцы левой руки и ими бьем по струнам. После того как пальцы пролетают мимо струн, часть руки глушит их."
+            android:text="@string/lessonOne6"
             android:textSize="20sp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Играем все это вместе. Вниз-вверх-щелчок-вверх. В итоге должно получиться как на нкопке 'Бой №1'.\n
-Отрабатывайте все в медленном ритме. На то чтобы вы научились играть это правильно может потребоваться несколько дней.\n
-После того как вы довели правую руку до автоматизма, мы можем добавить первые аккорды.\n
-Аккорд Am(Ля минор) ставится и звучит он вот так."
+            android:text="@string/lessonOne7"
             android:textSize="20sp" />
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -159,9 +153,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text=" Зажимается вторая струна на первом ладу указательным пальцем, четверную струну на втором ладу средним пальцем и третью струну на втором ладу безымянным пальцем.\n
-Звучать он должен вот так (аудио).\n
-Зажимаем аккорд Am и играем наш бой четыре раза и ставим следующий аккорд – С (До мажор)."
+            android:text="@string/lessonOne8"
             android:textSize="20sp" />
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -203,8 +195,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Указательный и средний палец остаются на месте, а безымянный переносим на пятую струну третьего лада. Играем так же четыре боя.\n
-Наш следующий аккорд – Dm (Ре минор). Первая струна первый лад, третья струна второй лад и вторая струна третий лад. Играем так же четыре раза."
+            android:text="@string/lessonOne9"
             android:textSize="20sp" />
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -246,8 +237,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="И последний аккорд - G (Соль мажор). Пятая струна второй лад, шестая струна третий лад и первая струна тоже третий лад. Так же играем наш бой четыре раза.\n
-Когда вы выучите эти аккорды, старайтесь играть их без паузы, без остановки правой руки при переходе с аккорда на аккорд."
+            android:text="@string/lessonOne10"
             android:textSize="20sp" />
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -288,12 +278,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="В результате, уже после первого занятия вы сможете сыграть свою первую песню. Она называется «Звезда по имени солнце»
-В этой песне аккорды идут в такой последовательности:\n
-Am C Dm G\n
-Am C Dm G\n
-Dm Am.\n
-В следующем уроке мы сделаем упор на аккорды. Мы будем учиться быстро переставлять аккорды, играя их одним боем."
+            android:text="@string/lessonOne11"
             android:textSize="20sp" />
 
     </LinearLayout>

@@ -18,7 +18,7 @@
                 android:id="@+id/back"
                 android:layout_width="90dp"
                 android:layout_height="wrap_content"
-                android:text="Назад"
+                android:text="@string/back"
                 app:backgroundTint="@color/purple_700"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -39,11 +39,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Сегодня мы совместим бой №1 и бой №2 и сыграем песню группы Кино «Звезда».\n
-Играется этот совмещенный бой вот так:\n
-Вниз-щелчок-вверх-вниз-вверх-щелчок-вверх.\n
-Щелчок не глушим.\n
-Особенностью этого урока является то, что в некоторых пестах мы будем играть на аккорде не целое количество боев."
+                android:text="@string/lessonEighteen1"
                 android:textSize="20sp" />
         </LinearLayout>
 
@@ -52,10 +48,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Например, вступление этой песни играется на таких аккордах:\n
-Em D Em D G D G D\n
-Все аккорды берутся на баррэ.\n
-И мы играем полтора боя на первом аккорде, и оставшиеся пол боя на втором. Звучит это так:"
+            android:text="@string/lessonEighteen2"
             android:textSize="20sp" />
 
 
@@ -75,8 +68,8 @@ Em D Em D G D G D\n
                 android:layout_marginEnd="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginBottom="16dp"
-                android:background="@color/purple_700"
-                android:text="Поделенный бой во вступлении"
+                app:backgroundTint="@color/purple_700"
+                android:text="@string/lessonEighteen3"
                 android:textAllCaps="false"
                 android:textSize="18sp"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -89,9 +82,7 @@ Em D Em D G D G D\n
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Вступление и куплет играется на баррэ, а припев на обычных аккордах. Аккорды в куплете такие:\n
-Em D G G\n
-Am D Em Em"
+            android:text="@string/lessonEighteen4"
             android:textSize="20sp" />
 
 
@@ -99,9 +90,7 @@ Am D Em Em"
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Аккорды припева:\n
-G D EmE m\n
-В конце припева, после аккорда D сразу переходим на проигрыш, который играется так же, как вступление."
+            android:text="@string/lessonEighteen5"
             android:textSize="20sp" />
 
 
