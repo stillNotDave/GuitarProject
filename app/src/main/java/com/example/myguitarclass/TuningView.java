@@ -48,7 +48,7 @@ public class TuningView extends View {
         //array.recycle();
     }
 
-
+//определение индекса струны(какая нота будет по середине
     public void setSelectedIndex(int selectedIndex, boolean animate) {
         if (selectedIndex == mSelectedIndex)
             return;
@@ -62,7 +62,7 @@ public class TuningView extends View {
                 @Override
                 public void onAnimationUpdate(ValueAnimator animation) {
                     mOffset = (float) animation.getAnimatedValue();
-                    invalidate();
+                    invalidate();//обновление анимации
                 }
             });
             mOffsetAnimator.start();
@@ -71,7 +71,7 @@ public class TuningView extends View {
         }
     }
 
-
+// определяем какую из нот поместить в середину
     public void setSelectedIndex(int selectedIndex) {
         setSelectedIndex(selectedIndex, false);
     }
@@ -82,6 +82,7 @@ public class TuningView extends View {
         }
     }
 
+    //меняет размер текста в зависимости от размера экрана телефона
     @Override
     protected void onSizeChanged(int w, int h, int oldw, int oldh) {
         super.onSizeChanged(w, h, oldw, oldh);
@@ -93,6 +94,8 @@ public class TuningView extends View {
         mTuning = tuning;
     }
 
+
+    // рисуем буквы которые ноты
     @Override
     protected void onDraw(Canvas canvas) {
         if (mTuning == null)

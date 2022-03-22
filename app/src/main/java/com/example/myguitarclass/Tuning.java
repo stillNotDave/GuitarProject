@@ -14,7 +14,8 @@ public class Tuning {
         this.pitches = pitches;
     }
 
-
+    // определение индекса
+    //какая полученная частота наиболее близка к ноте
     public int closestPitchIndex(float freq) {// подсчет частоты
         int index = -1;
         float dist = Float.MAX_VALUE;
