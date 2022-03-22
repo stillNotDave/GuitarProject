@@ -1,21 +1,20 @@
 package com.example.myguitarclass;
 
-import androidx.appcompat.app.AppCompatActivity;
+import static com.example.myguitarclass.ChooseString.paramString;
+import static com.example.myguitarclass.NavUtils.openActivity;
+import static com.example.myguitarclass.Training.paramIntent;
 
 import android.content.Context;
-import android.content.Intent;
 import android.graphics.Color;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
+
 import java.util.Random;
-
-
-import static com.example.myguitarclass.ChooseString.paramString;
-import static com.example.myguitarclass.NavUtils.openActivity;
-import static com.example.myguitarclass.Training.paramIntent;
 
 
 public class Game extends AppCompatActivity {
@@ -203,21 +202,7 @@ public class Game extends AppCompatActivity {
         ChangeTextOnButton();
         return str;
     }
-    /*public void openActivity(){ //для перехода назад по активностям
-        Intent intent = new Intent();
 
-        if(paramIntent==1) {
-            intent = new Intent(this, Training.class);
-            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-            startActivity(intent);
-        }
-        else
-        {
-            intent = new Intent(this, ChooseString.class);
-            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-            startActivity(intent);
-        }
-    }*/
 
     public int  Randomize() {
         Random random = new Random();

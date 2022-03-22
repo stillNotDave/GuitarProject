@@ -1,14 +1,14 @@
 package com.example.myguitarclass;
 
-import androidx.appcompat.app.AppCompatActivity;
+import static com.example.myguitarclass.NavUtils.openActivity;
 
 import android.content.Context;
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
-import static com.example.myguitarclass.NavUtils.openActivity;
+import androidx.appcompat.app.AppCompatActivity;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -17,7 +17,8 @@ public class MainActivity extends AppCompatActivity {
     private Button button_to_practice;
     private Button button_to_tuner;
 
-
+    private long backPressedTime;
+    private Toast backToast;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,6 +54,22 @@ public class MainActivity extends AppCompatActivity {
             }
 
         });
+    }
+
+    //системная кнопка назад
+    // 2 нажатия чтобы выйти
+    @Override
+    public void onBackPressed() {
+        if (backPressedTime + 2000 > System.currentTimeMillis()){
+            backToast.cancel();
+            super.onBackPressed();
+            return;
+        }
+        else{
+            backToast = Toast.makeText(getBaseContext(), "Нажмите еще раз, чтобы выйти",Toast.LENGTH_SHORT);
+            backToast.show();
+        }
+        backPressedTime = System.currentTimeMillis();
     }
 
 }

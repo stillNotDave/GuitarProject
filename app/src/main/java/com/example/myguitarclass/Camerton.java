@@ -1,20 +1,20 @@
 package com.example.myguitarclass;
 
-import androidx.appcompat.app.AppCompatActivity;
+import static com.example.myguitarclass.NavUtils.openActivity;
+import static com.example.myguitarclass.Sound.soundPlay;
+import static com.example.myguitarclass.Sound.tuning_sound;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.PopupMenu;
-import android.view.MenuItem;
 import android.widget.Toast;
 
-import static com.example.myguitarclass.NavUtils.openActivity;
-import static com.example.myguitarclass.Sound.soundPlay;
-import static com.example.myguitarclass.Sound.tuning_sound;
+import androidx.appcompat.app.AppCompatActivity;
 
 public class Camerton extends AppCompatActivity {
     Context context = this;
@@ -140,23 +140,33 @@ public class Camerton extends AppCompatActivity {
                             case R.id.E_major:
                                 numberTuning=0;
                                 Change_tuning();
-
                                 return true;
+
                             case R.id.Drop_D:
                                 numberTuning=1;
                                 Change_tuning();
-
                                 return true;
+
                             case R.id.Drop_C:
                                 numberTuning=2;
                                 Change_tuning();
-
                                 return true;
+
                             case R.id.DADGAD:
                                 numberTuning=3;
                                 Change_tuning();
-
                                 return true;
+
+                            case R.id.Open_D:
+                                numberTuning=4;
+                                Change_tuning();
+                                return true;
+
+                            case R.id.Open_G:
+                                numberTuning=5;
+                                Change_tuning();
+                                return true;
+
                             default:
                                 return false;
                         }
@@ -192,21 +202,13 @@ public class Camerton extends AppCompatActivity {
             case 1:
                 switch (number_string) { //это стоит доработать
                     case R.id.stringe:
+                    case R.id.stringB:
+
+                    case R.id.stringG:
+                    case R.id.stringD:
+                    case R.id.stringA:
                         Toast.makeText(Camerton.this, "Как и в стандартном строе", Toast.LENGTH_LONG).show();
 
-                        break;
-                    case R.id.stringB:
-                        Toast.makeText(Camerton.this,"Как и в стандартном строе", Toast.LENGTH_LONG).show();
-
-                        break;
-                    case R.id.stringG:
-                        Toast.makeText(Camerton.this,"Как и в стандартном строе", Toast.LENGTH_LONG).show();
-                        break;
-                    case R.id.stringD:
-                        Toast.makeText(Camerton.this,"Как и в стандартном строе", Toast.LENGTH_LONG).show();
-                        break;
-                    case R.id.stringA:
-                        Toast.makeText(Camerton.this,"Как и в стандартном строе", Toast.LENGTH_LONG).show();
                         break;
                     case R.id.stringE:
                         Toast.makeText(Camerton.this,"Опустите струну на тон относительно стандартного строя", Toast.LENGTH_LONG).show();
@@ -217,19 +219,11 @@ public class Camerton extends AppCompatActivity {
             case 2:
                 switch (number_string) {
                     case R.id.stringe:
-                        Toast.makeText(Camerton.this, "Опустите струну на тон относительно стандартного строя", Toast.LENGTH_LONG).show();
-                        break;
                     case R.id.stringB:
-                        Toast.makeText(Camerton.this,"Опустите струну на тон относительно стандартного строя", Toast.LENGTH_LONG).show();
-                        break;
                     case R.id.stringG:
-                        Toast.makeText(Camerton.this,"Опустите струну на тон относительно стандартного строя", Toast.LENGTH_LONG).show();
-                        break;
                     case R.id.stringD:
-                        Toast.makeText(Camerton.this,"Опустите струну на тон относительно стандартного строя", Toast.LENGTH_LONG).show();
-                        break;
                     case R.id.stringA:
-                        Toast.makeText(Camerton.this,"Опустите струну на тон относительно стандартного строя", Toast.LENGTH_LONG).show();
+                        Toast.makeText(Camerton.this, "Опустите струну на тон относительно стандартного строя", Toast.LENGTH_LONG).show();
                         break;
                     case R.id.stringE:
                         Toast.makeText(Camerton.this,"Опустите струну на 2 тона относительно стандартного строя", Toast.LENGTH_LONG).show();
@@ -239,27 +233,53 @@ public class Camerton extends AppCompatActivity {
             case 3:
                 switch (number_string) {
                     case R.id.stringe:
+                    case R.id.stringB:
+                    case R.id.stringE:
                         Toast.makeText(Camerton.this, "Опустите струну на тон относительно стандартного строя", Toast.LENGTH_LONG).show();
                         break;
-                    case R.id.stringB:
-                        Toast.makeText(Camerton.this,"Опустите струну на тон относительно стандартного строя", Toast.LENGTH_LONG).show();
-                        break;
                     case R.id.stringG:
-                        Toast.makeText(Camerton.this,"Как и в стандартном строе", Toast.LENGTH_LONG).show();
-                        break;
                     case R.id.stringD:
-                        Toast.makeText(Camerton.this,"Как и в стандартном строе", Toast.LENGTH_LONG).show();
-                        break;
                     case R.id.stringA:
                         Toast.makeText(Camerton.this,"Как и в стандартном строе", Toast.LENGTH_LONG).show();
                         break;
+                }
+                break;
+            case 4: //open d
+                switch (number_string){
+                    case R.id.stringe:
+                    case R.id.stringB:
+                        Toast.makeText(Camerton.this,"Опустите струну на тон относительно стандартного строя", Toast.LENGTH_LONG).show();
+                    case R.id.stringE:
+                        Toast.makeText(Camerton.this, "Опустите струну на тон относительно стандартного строя", Toast.LENGTH_LONG).show();
+                        break;
+                    case R.id.stringG:
+                        Toast.makeText(Camerton.this,"Как и в стандартном строе", Toast.LENGTH_LONG).show();
+                        Toast.makeText(Camerton.this, "Опустите струну на пол тона относительно стандартного строя", Toast.LENGTH_LONG).show();
+                        break;
+                    case R.id.stringD:
+                    case R.id.stringA:
+                        Toast.makeText(Camerton.this,"Как и в стандартном строе", Toast.LENGTH_LONG).show();
+                        break;
+                }
+                break;
+            case 5: //open g
+                switch (number_string){
+                    case R.id.stringe:
+                    case R.id.stringA:
                     case R.id.stringE:
                         Toast.makeText(Camerton.this,"Опустите струну на тон относительно стандартного строя", Toast.LENGTH_LONG).show();
+                        Toast.makeText(Camerton.this, "Опустите струну тон относительно стандартного строя", Toast.LENGTH_LONG).show();
+                        break;
+                    case R.id.stringB:
+                    case R.id.stringG:
+                    case R.id.stringD:
+                        Toast.makeText(Camerton.this,"Как и в стандартном строе", Toast.LENGTH_LONG).show();
                         break;
                 }
                 break;
         }
     }
+
     public void Change_tuning(){
         buttonTitle.setText(tuning_sound[numberTuning][0].getSound_name());
         buttonStringOne.setText(tuning_sound[numberTuning][1].getSound_name());
