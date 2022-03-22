@@ -15,7 +15,7 @@ public class Tuning {
     }
 
 
-    public int closestPitchIndex(float freq) {//скорее всего подсчет частоты
+    public int closestPitchIndex(float freq) {// подсчет частоты
         int index = -1;
         float dist = Float.MAX_VALUE;
         for (int i = 0; i < pitches.length; i++) {

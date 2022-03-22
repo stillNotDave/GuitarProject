@@ -42,7 +42,7 @@ public class TunerActivity extends AppCompatActivity {
 
     private Button buttonBack;
     private Button chooseTuning;
-    private Tuning mTuning;// m - бесполезная вещь рекомендованная гуглом
+    private Tuning mTuning;//
     private AudioProcessor mAudioProcessor;//?
     private ExecutorService mExecutor = Executors.newSingleThreadExecutor();// потока для записи звука
     private NeedleView mNeedleView; //указатель
@@ -170,7 +170,6 @@ public class TunerActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.tuner);
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);//сохроняет экран включенным
-        //mTuning = Tuning.getTuning(this, Preferences.getString(this, getString(R.string.pref_tuning_key), getString(R.string.standard_tuning_val)));//инициализация тюнинга, в зависимости от выбранного строя
         mTuning = Tuning.getTuning(this, "Standard");
         mNeedleView = (NeedleView) findViewById(R.id.pitch_needle_view);//насйтрока отображения указателя
         mNeedleView.setTickLabel(-1.0F, "-100c");
@@ -214,27 +213,27 @@ public class TunerActivity extends AppCompatActivity {
                         switch (item.getItemId()) {
 
                             case R.id.E_major:
-                                //numberTuning=0;
+
                                 mTuningView.setTuning(Tuning.getTuning(context,"Standard"));
 
                                 return true;
                             case R.id.Open_A:
-                                //numberTuning=1;
+
                                 mTuningView.setTuning( Tuning.getTuning(context,"Open A"));
 
                                 return true;
                             case R.id.Open_G:
-                               // numberTuning=2;
+
                                 mTuningView.setTuning(Tuning.getTuning(context,"Open G"));
 
                                 return true;
                             case R.id.Open_D:
-                                //numberTuning=3;
+
                                 mTuningView.setTuning( Tuning.getTuning(context,"Open D"));
 
                                 return true;
                             case R.id.Drop_D:
-                                //numberTuning=3;
+
                                 mTuningView.setTuning( Tuning.getTuning(context,"Drop D"));
 
                                 return true;
@@ -249,15 +248,6 @@ public class TunerActivity extends AppCompatActivity {
     }
 
 
-    //настройки нужно будет перенести
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case R.id.action_settings:
-                NavUtils.showSettingsActivity(this);
-                return true;
-        }
-        return super.onOptionsItemSelected(item);
-    }
+    
 
 }
