@@ -9,6 +9,7 @@
     <string name="pref_tuning_title">Tuning</string>
 
     <string name="action_settings">Settings</string>
+    <string name="foo">Set tings</string>
 
 
     <!-- Tuning names -->
@@ -44,6 +45,7 @@
     <string name="audio_record_init_error">Could not initialize AudioRecord.</string>
     <string name="pref_privacy_policy_title">Privacy policy</string>
     <string name="pref_privacy_policy_key" translatable="false">pref_privacy_policy</string>
+
 
     <!-- lessons text -->
     <string name="back">Назад</string>

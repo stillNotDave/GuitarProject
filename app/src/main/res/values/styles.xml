@@ -3,7 +3,14 @@
 <resources>
 
     <!-- Light theme -->
-
+    <style name="AppThemeLight" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorControlNormal">@android:color/white</item>
+        <item name="needleViewStyle">@style/LightNeedleView</item>
+        <item name="tuningViewStyle">@style/LightTuningView</item>
+    </style>
 
     <style name="LightNeedleView">
         <item name="needleColor">#42598F</item>
@@ -20,10 +27,17 @@
     </style>
 
     <!-- Dark theme -->
-
+    <style name="AppThemeDark" parent="Theme.AppCompat">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorControlNormal">@android:color/white</item>
+        <item name="needleViewStyle">@style/DarkNeedleView</item>
+        <item name="tuningViewStyle">@style/DarkTuningView</item>
+    </style>
 
     <style name="DarkNeedleView">
-
+        <item name="needleColor">@color/colorAccent</item>
         <item name="smallTicksColor">@color/needleViewSmallTicksColorDark</item>
         <item name="bigTicksColor">@color/needleViewBigTicksColorDark</item>
         <item name="textColor">@android:color/white</item>

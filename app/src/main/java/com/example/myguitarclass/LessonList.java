@@ -1,9 +1,11 @@
 package com.example.myguitarclass;
 
-import static com.example.myguitarclass.NavUtils.openActivity;
-
 import android.app.Activity;
+import android.app.Person;
 import android.content.Context;
+import android.content.Intent;
+import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -11,10 +13,14 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
 
+import androidx.annotation.RequiresApi;
+
+import static com.example.myguitarclass.NavUtils.openActivity;
+
 public class LessonList extends Activity {
     Context context = this;
     private Button buttonBack;
-    ListView lvMain; //лист вью))
+    ListView lvMain; //лист вью
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -14,11 +14,5 @@
     <item
         android:id="@+id/DADGAD"
         android:title="DADGAD"/>
-    <item
-        android:id="@+id/Open_D"
-        android:title="Open D"/>
-    <item
-        android:id="@+id/Open_G"
-        android:title="Open G"/>
 
 </menu>

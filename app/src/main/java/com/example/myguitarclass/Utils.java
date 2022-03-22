@@ -102,9 +102,9 @@ public class Utils {
     public static void setupActivityTheme(Activity activity) {
         boolean dark = Preferences.getBoolean(activity, activity.getString(R.string.pref_dark_theme_key), false);
         if (dark) {
-            //activity.setTheme(R.style.AppThemeDark);
+            activity.setTheme(R.style.AppThemeDark);
         } else {
-           // activity.setTheme(R.style.AppThemeLight);
+            activity.setTheme(R.style.AppThemeLight);
         }
     }
 
