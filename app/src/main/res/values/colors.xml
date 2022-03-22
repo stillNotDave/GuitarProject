@@ -7,8 +7,7 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="botton_color">#42598F</color>
-    <color name="background_color">#09101F</color>
+
     <color name="gray">#424645</color>
     <color name="Colki_Color" />
     <color name="ColorColkov">#C50808</color>
@@ -25,6 +24,11 @@
     <color name="tuningItemNormalColor">#CCCCCC</color>
     <color name="tuningItemSelectedColor">#FFFFFF</color>
 
-
+    <color name="splashScreen">#F2A172</color>
+    <color name="activityColor">#0487D9</color>
+    <color name="background_color">#F2A172</color>
+    <color name="botton_color">#BF533B</color>
+    <color name="text">#17BFA0</color>
+    <color name="back">#BF533B</color>
 
 </resources>

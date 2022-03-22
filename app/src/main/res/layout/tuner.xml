@@ -27,7 +27,8 @@
             android:layout_height="wrap_content"
             android:layout_gravity="left"
             android:text="Назад"
-            app:backgroundTint="@color/purple_500"
+            android:background="@drawable/custom_button"
+            app:backgroundTint="@color/back"
             android:textSize="14sp"/>
 
         <Button
@@ -37,7 +38,8 @@
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:layout_gravity="right"
-            android:background="@color/botton_color"
+            android:background="@drawable/rectangle_rounded"
+            app:backgroundTint="@color/back"
             android:text="Выбрать строй"
             android:textSize="16sp" />
     </LinearLayout>
