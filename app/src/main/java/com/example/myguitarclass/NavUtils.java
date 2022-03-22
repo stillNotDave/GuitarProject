@@ -7,10 +7,7 @@ import android.content.Intent;
 import static com.example.myguitarclass.Training.paramIntent;
 
 public class NavUtils {
-    public static void showSettingsActivity(Context context) {
-        Intent intent = new Intent(context, SettingsActivity.class);
-        context.startActivity(intent);
-    }
+
     public static void openActivity(Context context,Class<?> cls) {
 
         Intent intent = new Intent(context, cls);

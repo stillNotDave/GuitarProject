@@ -40,12 +40,12 @@ public class TuningView extends View {
         final TypedArray array = context.obtainStyledAttributes(attrs,
                 R.styleable.TuningView, defStyleAttr,
                 R.style.LightTuningView);//переделать
-        mNormalTextColor = array.getColor(R.styleable.TuningView_normalTextColor, 0);
-        mSelectedTextColor = array.getColor(R.styleable.TuningView_selectedTextColor, 0);
+        //mNormalTextColor = array.getColor(R.styleable.TuningView_normalTextColor, 0);
+        //mSelectedTextColor = array.getColor(R.styleable.TuningView_selectedTextColor, 0);
         float textSize = array.getDimension(R.styleable.TuningView_textSize, 0);
         mPaint.setTextSize(textSize);
         mTuningItemWidth = array.getDimension(R.styleable.TuningView_itemWidth, 0);
-        array.recycle();
+        //array.recycle();
     }
 
 

@@ -23,7 +23,7 @@ public abstract class AppCompatPreferenceActivity extends PreferenceActivity {
     protected void onCreate(Bundle savedInstanceState) {
         getDelegate().installViewFactory();
         getDelegate().onCreate(savedInstanceState);
-        Utils.setupActivityTheme(this);
+        //Utils.setupActivityTheme(this);
         super.onCreate(savedInstanceState);
     }
 

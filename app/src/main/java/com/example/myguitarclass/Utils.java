@@ -44,18 +44,18 @@ public class Utils {
 
     public static void reveal(View view) {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-            // get the center for the clipping circle
+
             int cx = view.getWidth() / 2;
             int cy = view.getHeight() / 2;
 
-            // get the final radius for the clipping circle
+
             float finalRadius = (float) Math.hypot(cx, cy);
 
-            // create the animator for this view (the start radius is zero)
+
             Animator anim =
                     ViewAnimationUtils.createCircularReveal(view, cx, cy, 0, finalRadius);
 
-            // make the view visible and start the animation
+
             view.setVisibility(View.VISIBLE);
             anim.start();
         } else {
@@ -99,14 +99,6 @@ public class Utils {
         }
     }
 
-    public static void setupActivityTheme(Activity activity) {
-        boolean dark = Preferences.getBoolean(activity, activity.getString(R.string.pref_dark_theme_key), false);
-        if (dark) {
-            activity.setTheme(R.style.AppThemeDark);
-        } else {
-            activity.setTheme(R.style.AppThemeLight);
-        }
-    }
 
     public static boolean checkPermission(Context context, String permission) {
         return ContextCompat.checkSelfPermission(context,

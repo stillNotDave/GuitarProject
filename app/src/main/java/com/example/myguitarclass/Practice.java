@@ -1,6 +1,8 @@
 package com.example.myguitarclass;
 
-import android.content.Intent;
+import static com.example.myguitarclass.NavUtils.openActivity;
+
+import android.content.Context;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -9,8 +11,10 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class Practice extends AppCompatActivity {
 
-    private Button button_main_to_training;
-    private Button button_main_to_guitar_tuning;
+    Context context = this;
+
+    private Button buttonMainToTraining;
+    private Button buttonMainToGuitarTuning;
     private Button buttonBack;
 
     @Override
@@ -23,24 +27,23 @@ public class Practice extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 finish();
-                openActivity(MainActivity.class);
+                openActivity(context,MainActivity.class);
             }
         });
 
-        button_main_to_training=findViewById(R.id.training);
-        button_main_to_training.setOnClickListener(new View.OnClickListener() {
+        buttonMainToTraining=findViewById(R.id.training);
+        buttonMainToTraining.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-               openActivity(Training.class);
+               openActivity(context,Training.class);
             }
         });
 
-        button_main_to_guitar_tuning=findViewById(R.id.tuning);
-        button_main_to_guitar_tuning.setOnClickListener(new View.OnClickListener() {
+        buttonMainToGuitarTuning=findViewById(R.id.tuning);
+        buttonMainToGuitarTuning.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                openActivity(Camerton.class);
+                openActivity(context,Camerton.class);
             }
         });
     }
@@ -49,14 +52,13 @@ public class Practice extends AppCompatActivity {
     @Override
     protected void onStop() {
         super.onStop();
-
             finish();
 
     }
-    public void openActivity(Class<?> cls) {
-       // finish();
-        Intent intent = new Intent(this, cls);
-        startActivity(intent);
-    }
+//    public void openActivity(Class<?> cls) {
+//       // finish();
+//        Intent intent = new Intent(this, cls);
+//        startActivity(intent);
+//    }
 
 }
